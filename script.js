@@ -42,20 +42,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 revealEls.forEach(el => revealObserver.observe(el));
 
-// ── TV VIDEO AUTOPLAY ON SCROLL ──
-const tvVideo = document.getElementById("tv-video");
-if (tvVideo) {
-  const videoObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        tvVideo.play().catch(() => {});
-      } else {
-        tvVideo.pause();
-      }
-    });
-  }, { threshold: 0.4 });
-  videoObserver.observe(tvVideo);
-}
+// removed manual video pausing to allow continuous smooth native autoplay
 
 // ── LIGHTBOX ──
 function openLightbox(type, src) {
