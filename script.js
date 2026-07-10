@@ -4,7 +4,7 @@
    ============================================= */
 
 // ── ROTATING TAGLINE ──
-const taglines = ["Product Manager", "Problem Solver", "Storyteller", "User Advocate"];
+const taglines = ["Product Thinker", "Problem Solver", "Storyteller", "Storyteller", "Researcher", "Builder", "Communicator", "Visionary"];
 let tagIdx = 0;
 const tagEl = document.getElementById("tagline");
 
