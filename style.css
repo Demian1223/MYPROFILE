@@ -810,9 +810,77 @@ nav.scrolled {
   line-height: 1.3;
 }
 
+/* ── SECTION: JOURNEY ── */
+#journey {
+  background: var(--off-white);
+  padding: 6rem 2rem;
+}
+
+.journey-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.journey-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 900;
+  color: var(--navy);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  margin-bottom: 1.5rem;
+}
+
+.journey-body {
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 680px;
+  margin: 0 auto 3rem;
+}
+
+.major-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.major-card {
+  background: white;
+  border-radius: 14px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #eaecf0;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.major-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(6, 16, 43, 0.1);
+}
+
+.major-card img {
+  height: 130px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.major-card-title {
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 0.95rem;
+}
+
 /* ── SECTION: BATCH REP ── */
 #batchrep {
-  background: var(--off-white);
+  background: white;
   padding: 6rem 2rem;
 }
 
@@ -1251,6 +1319,10 @@ footer {
 
   .media-grid .media-card {
     grid-column: 1;
+  }
+
+  .major-cards {
+    grid-template-columns: 1fr;
   }
 
   .nav-links {
