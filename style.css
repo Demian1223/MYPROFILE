@@ -2092,6 +2092,11 @@ footer {
   font-weight: 600;
 }
 
+/* Kapruka variant: green-tinted winner */
+.cs-rice-winner.kap {
+  background: rgba(16, 185, 129, 0.06) !important;
+}
+
 /* Placeholder for images */
 .cs-img-placeholder {
   width: 100%;
