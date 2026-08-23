@@ -1,7 +1,7 @@
 /* =============================================
-   DEMIAN DE SILVA — PORTFOLIO
-   Premium Design System
-   ============================================= */
+  DEMIAN DE SILVA  PORTFOLIO
+  Premium Design System
+  ============================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&display=swap');
 
@@ -1199,6 +1199,57 @@ footer {
   object-fit: contain;
 }
 
+/* ── Project Management section & badges ── */
+.pm-section {
+  background: #f8fafc;
+  padding: 3.5rem 2rem;
+}
+.pm-section-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.pm-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 900;
+  color: var(--navy);
+  margin: 0.5rem 0 1rem;
+}
+.pm-sub {
+  color: #4b5563;
+  max-width: 720px;
+  margin: 0 auto 1rem;
+  line-height: 1.6;
+}
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  margin: 1rem 0 0.75rem;
+}
+.skill-badge {
+  background: white;
+  border: 1px solid #e6eefb;
+  color: var(--navy);
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.82rem;
+  box-shadow: 0 6px 20px rgba(6,16,43,0.04);
+}
+.pm-proof {
+  color: #374151;
+  font-weight: 600;
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 640px) {
+  .pm-title { font-size: 1.6rem; }
+  .skill-badge { font-size: 0.78rem; padding: 0.4rem 0.7rem; }
+}
+
 #lightbox-video {
   max-width: 90vw;
   max-height: 88vh;
@@ -1243,7 +1294,7 @@ footer {
 }
 
 /* ══════════════════════════════════════════
-   SELECTED PRODUCT WORK — Homepage Preview
+  SELECTED PRODUCT WORK  Homepage Preview
 ══════════════════════════════════════════ */
 #product-work {
   background: white;

@@ -1,6 +1,6 @@
 /* =============================================
-   DEMIAN DE SILVA — PORTFOLIO
-   script.js — All interactive behavior
+  DEMIAN DE SILVA  PORTFOLIO
+  script.js  All interactive behavior
    ============================================= */
 
 // ── ROTATING TAGLINE ──
@@ -98,7 +98,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // ── ACHIEVEMENT NUMBERS COUNT-UP ON SCROLL ──
 function animateCountUp(el, targetStr) {
-  // Parse the target — handle decimals and + signs
+  // Parse the target handle decimals and + signs
   const isFloat = targetStr.includes(".");
   const hasPlus = targetStr.includes("+");
   const suffix = hasPlus ? "+" : (targetStr.includes("%") ? "%" : "");
