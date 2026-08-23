@@ -1,0 +1,705 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapruka — Closing the Loop · Demian de Silva</title>
+    <meta name="description" content="An independent PM case study rethinking Kapruka's post-purchase complaint resolution experience through customer research, 5 Whys, JTBD, RICE, Figma and Jira.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Kapruka accent colour — teal/green personality within the main navy system */
+        .kap-accent {
+            color: #10b981;
+        }
+
+        .kap-accent-bg {
+            background: linear-gradient(135deg, #10b981, #0ea5e9);
+        }
+
+        .project-hero.kapruka-hero::before {
+            background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
+        }
+
+        .cs-section-label.kap {
+            color: #10b981;
+        }
+
+        .cs-pain-card.kap {
+            border-left-color: #10b981;
+        }
+
+        .cs-callout.kap {
+            background: linear-gradient(135deg, #064e3b 0%, #0d1f4a 100%);
+        }
+
+        .cs-rice-winner.kap {
+            background: rgba(16, 185, 129, 0.06) !important;
+        }
+
+        .project-hero-label.kap::before {
+            background: #10b981;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <a href="../index.html" class="nav-logo">Demian de Silva</a>
+        <ul class="nav-links">
+            <li><a href="../index.html#tv">TV</a></li>
+            <li><a href="../index.html#media">Speaking</a></li>
+            <li><a href="index.html" style="color:white;">Projects</a></li>
+            <li><a href="../index.html#batchrep">Leadership</a></li>
+            <li><a href="../index.html#closing">Contact</a></li>
+            <li><a href="../assets/PDFS/CV_PM.pdf" download="" class="nav-cta">Download CV</a></li>
+        </ul>
+    </nav>
+
+    <!-- PROJECT HERO -->
+    <header class="project-hero kapruka-hero">
+        <div class="project-hero-inner">
+            <nav class="project-breadcrumb" aria-label="Breadcrumb">
+                <a href="../index.html">Home</a><span>/</span>
+                <a href="index.html">Projects</a><span>/</span>Kapruka
+            </nav>
+            <div class="reveal">
+                <p class="project-hero-label kap" style="color:#10b981;">Independent Case Study · Kapruka</p>
+                <h1 class="project-hero-title">Closing<br><em style="font-style:italic; color:#10b981;">the Loop</em>
+                </h1>
+                <p class="project-hero-subtitle">Rethinking Kapruka's Post-Purchase Support &amp; Resolution Experience
+                </p>
+                <div class="project-meta-grid">
+                    <div class="project-meta-cell">
+                        <div class="project-meta-label">Project Type</div>
+                        <div class="project-meta-value">Independent PM Case Study</div>
+                    </div>
+                    <div class="project-meta-cell">
+                        <div class="project-meta-label">Company Context</div>
+                        <div class="project-meta-value">Kapruka<br><span style="font-size:0.75rem; color:rgba(255,255,255,0.4);">Sri Lanka's leading e-commerce
+                                platform</span></div>
+                    </div>
+                    <div class="project-meta-cell">
+                        <div class="project-meta-label">Focus</div>
+                        <div class="project-meta-value">Post-purchase support &amp; complaint resolution</div>
+                    </div>
+                    <div class="project-meta-cell">
+                        <div class="project-meta-label">My Contribution</div>
+                        <div class="project-meta-value">
+                            <div class="project-contrib-tags">
+                                <span class="project-contrib-tag">Customer Research</span>
+                                <span class="project-contrib-tag">Review Analysis</span>
+                                <span class="project-contrib-tag">Journey Mapping</span>
+                                <span class="project-contrib-tag">5 Whys</span>
+                                <span class="project-contrib-tag">JTBD</span>
+                                <span class="project-contrib-tag">RICE</span>
+                                <span class="project-contrib-tag">Figma</span>
+                                <span class="project-contrib-tag">Jira</span>
+                                <span class="project-contrib-tag">Product Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="max-width: 1100px; margin: 3rem auto 0;">
+                <img src="../assets/images/kapruka/01_cover.png" alt="Kapruka Cover" style="width:100%; border-radius:12px; box-shadow: 0 20px 60px rgba(0,0,0,0.15);" onclick="openLightbox('image', this.src)">
+            </div>
+        </div>
+    </header>
+
+    <!-- STATS STRIP -->
+    <div class="project-stats-strip">
+        <div class="project-stats-strip-inner">
+            <div class="project-stat-cell">
+                <div class="project-stat-num" style="color:#10b981;">87</div>
+                <div class="project-stat-label">Customer reviews analysed</div>
+            </div>
+            <div class="project-stat-cell">
+                <div class="project-stat-num" style="color:#10b981;">4</div>
+                <div class="project-stat-label">Solution approaches evaluated</div>
+            </div>
+            <div class="project-stat-cell">
+                <div class="project-stat-num" style="color:#10b981;">5</div>
+                <div class="project-stat-label">Why root-cause layers</div>
+            </div>
+            <div class="project-stat-cell">
+                <div class="project-stat-num" style="color:#10b981;">RICE</div>
+                <div class="project-stat-label">Evidence-based prioritisation</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROBLEM STATEMENT -->
+    <div class="project-problem-statement">
+        <div class="project-problem-statement-inner reveal">
+            <blockquote style="border-left-color:#10b981;">
+                When a Kapruka customer reports a problem — a damaged item, a late delivery, a missing order —
+                what happens next is unclear, untrackable, and often unresolved.
+                This case study explores how that experience could change.
+            </blockquote>
+        </div>
+    </div>
+
+    <!-- CASE STUDY CONTENT -->
+    <section class="case-study-content">
+        <div class="case-study-inner">
+
+            <!-- 01 Problem Context -->
+            <div class="cs-section">
+                <div class="phase-entry reveal"><div class="phase-text"><div class="phase-num">01</div><p class="phase-tag">Problem Context &amp; Definition</p><h2 class="cs-section-title">The post-purchase gap that erodes trust</h2><div class="cs-section-body">
+                        <p>Kapruka is Sri Lanka's leading e-commerce platform. While their ordering and delivery
+                            experience
+                            has matured significantly, the post-purchase support journey — specifically complaint
+                            handling
+                            and resolution — remains opaque, slow, and frustrating for customers.</p>
+                        <p>Customers have no visibility into whether their complaint was received, no tracking of
+                            resolution
+                            progress, and no clear escalation path when issues remain unresolved. This is a product gap,
+                            not just a customer service problem.</p>
+                    </div><div class="cs-callout kap" style="margin-top:1.5rem;">
+                        <div class="cs-callout-title">The Product Opportunity</div>
+                        <p>A structured, transparent, and accountable post-purchase resolution experience could
+                            significantly
+                            improve customer retention, reduce repeat complaints, and build long-term brand trust in a
+                            market
+                            where trust is the primary competitive differentiator.</p>
+                    </div></div><div class="phase-img"><img src="../assets/images/kapruka/02_executive_summary.png" alt="Executive Summary" onclick="openLightbox('image', this.src)"></div></div>
+            </div>
+
+            <!-- 02 Customer Evidence -->
+            <div class="cs-section">
+                <div class="phase-entry reveal reverse"><div class="phase-text"><div class="phase-num">02</div><p class="phase-tag">Customer Evidence Research</p><h2 class="cs-section-title">87 reviews. Real signal, not assumption.</h2><div class="cs-section-body">
+                        <p>I analysed 87 customer reviews and support interactions across Google Reviews, Facebook, and
+                            Kapruka's own feedback channels. The analysis identified recurring complaint patterns,
+                            sentiment clusters, and the specific failure points in the current support journey.</p>
+                        <p>The goal was to avoid building a solution for a problem I assumed existed. The data had to
+                            confirm it first.</p>
+                    </div><div class="cs-insights">
+                        <span class="cs-insight-pill">Customers report not receiving any confirmation their complaint
+                            was logged</span>
+                        <span class="cs-insight-pill">Resolution timelines are not communicated</span>
+                        <span class="cs-insight-pill">No escalation path when initial response is unsatisfactory</span>
+                        <span class="cs-insight-pill">Repeat complainers report feeling ignored</span>
+                        <span class="cs-insight-pill">Damaged/missing items dominate complaint volume</span>
+                    </div></div><div class="phase-img"><img src="../assets/images/kapruka/03_customer_feedback_analysi.png" alt="Customer Feedback Analysis" onclick="openLightbox('image', this.src)"></div></div>
+            </div>
+
+            <!-- 03 Current Journey -->
+            <div class="cs-section">
+                <div class="phase-entry reveal"><div class="phase-text"><div class="phase-num">03</div><p class="phase-tag">Current Kapruka Support Journey</p><h2 class="cs-section-title">Mapping what happens today</h2><div class="cs-section-body">
+                        <p>Before proposing anything, I mapped the current support flow as experienced by the customer —
+                            from identifying the issue through to (attempted) resolution. The journey map exposed
+                            exactly where the experience breaks down.</p>
+                    </div></div><div class="phase-img"><img src="../assets/images/kapruka/04_current_support_journey.png" alt="Current Support Journey" onclick="openLightbox('image', this.src)"></div></div>
+            </div>
+
+            <!-- 04 Pain Points -->
+            <div class="cs-section">
+                <div class="phase-entry reveal reverse"><div class="phase-text"><div class="phase-num">04</div><p class="phase-tag">Pain Points</p><h2 class="cs-section-title">Where the experience breaks down</h2><div class="cs-section-body">
+                        <p>From the review analysis and journey mapping, four primary pain points emerged consistently:
+                        </p>
+                    </div><div class="cs-pain-cards" style="margin-top:1.5rem;">
+                        <div class="cs-pain-card kap">
+                            <div class="cs-pain-card-title">No complaint acknowledgement</div>
+                            <div class="cs-pain-card-body">Customers receive no confirmation that their complaint has
+                                been received or logged, leaving them uncertain whether any action will follow.</div>
+                        </div>
+                        <div class="cs-pain-card kap">
+                            <div class="cs-pain-card-title">Zero resolution visibility</div>
+                            <div class="cs-pain-card-body">There is no tracking system for resolution status. Customers
+                                cannot see what stage their complaint is at or when to expect a response.</div>
+                        </div>
+                        <div class="cs-pain-card kap">
+                            <div class="cs-pain-card-title">No escalation path</div>
+                            <div class="cs-pain-card-body">When a first response is unsatisfactory, customers have no
+                                structured way to escalate. This leads to repeat contacts and frustration.</div>
+                        </div>
+                        <div class="cs-pain-card kap">
+                            <div class="cs-pain-card-title">Inconsistent resolution</div>
+                            <div class="cs-pain-card-body">Similar complaints receive different outcomes depending on
+                                who handles them. There is no SLA or accountability framework in place.</div>
+                        </div>
+                    </div></div><div class="phase-img"><img src="../assets/images/kapruka/05_pain_points.png" alt="Pain Points" onclick="openLightbox('image', this.src)"></div></div>
+            </div>
+
+            <!-- 05 Root Cause — 5 Whys -->
+            <div class="cs-section">
+                <div class="phase-entry reveal"><div class="phase-text"><div class="phase-num">05</div><p class="phase-tag">Root Cause Analysis — 5 Whys</p><h2 class="cs-section-title">Getting beneath the symptoms</h2><div class="cs-section-body">
+                        <p>To avoid solving surface-level symptoms, I applied the <strong>5 Whys technique</strong> to
+                            the
+                            primary pain point: customers don't know what's happening with their complaint.</p>
+                    </div><div style="margin-top:1.5rem;">
+                        <div style="display:flex; flex-direction:column; gap:0.75rem;">
+                            <div style="display:flex; gap:1rem; align-items:flex-start; padding:1rem 1.25rem; background:#fafbfc; border-radius:10px; border-left:3px solid #10b981;">
+                                <span style="font-family:'Playfair Display',serif; font-size:1.5rem; font-weight:900; color:#10b981; min-width:28px;">1</span>
+                                <div>
+                                    <div style="font-weight:700; color:var(--navy); font-size:0.88rem; margin-bottom:0.2rem;">
+                                        Why don't customers know what's happening?</div>
+                                    <div style="color:#4b5563; font-size:0.85rem;">Because there is no status update
+                                        system after a complaint is logged.</div>
+                                </div>
+                            </div>
+                            <div style="display:flex; gap:1rem; align-items:flex-start; padding:1rem 1.25rem; background:#fafbfc; border-radius:10px; border-left:3px solid #10b981;">
+                                <span style="font-family:'Playfair Display',serif; font-size:1.5rem; font-weight:900; color:#10b981; min-width:28px;">2</span>
+                                <div>
+                                    <div style="font-weight:700; color:var(--navy); font-size:0.88rem; margin-bottom:0.2rem;">
+                                        Why is there no status update system?</div>
+                                    <div style="color:#4b5563; font-size:0.85rem;">Because complaint handling is managed
+                                        manually without a structured ticketing workflow.</div>
+                                </div>
+                            </div>
+                            <div style="display:flex; gap:1rem; align-items:flex-start; padding:1rem 1.25rem; background:#fafbfc; border-radius:10px; border-left:3px solid #10b981;">
+                                <span style="font-family:'Playfair Display',serif; font-size:1.5rem; font-weight:900; color:#10b981; min-width:28px;">3</span>
+                                <div>
+                                    <div style="font-weight:700; color:var(--navy); font-size:0.88rem; margin-bottom:0.2rem;">
+                                        Why is complaint handling unstructured?</div>
+                                    <div style="color:#4b5563; font-size:0.85rem;">Because there is no defined SLA,
+                                        escalation path, or ownership framework for support cases.</div>
+                                </div>
+                            </div>
+                            <div style="display:flex; gap:1rem; align-items:flex-start; padding:1rem 1.25rem; background:#fafbfc; border-radius:10px; border-left:3px solid #10b981;">
+                                <span style="font-family:'Playfair Display',serif; font-size:1.5rem; font-weight:900; color:#10b981; min-width:28px;">4</span>
+                                <div>
+                                    <div style="font-weight:700; color:var(--navy); font-size:0.88rem; margin-bottom:0.2rem;">
+                                        Why is there no SLA or accountability framework?</div>
+                                    <div style="color:#4b5563; font-size:0.85rem;">Because post-purchase support has not
+                                        been treated as a product problem — it has been treated as a cost centre.</div>
+                                </div>
+                            </div>
+                            <div style="display:flex; gap:1rem; align-items:flex-start; padding:1rem 1.25rem; background:var(--navy); border-radius:10px; border-left:3px solid #10b981;">
+                                <span style="font-family:'Playfair Display',serif; font-size:1.5rem; font-weight:900; color:#10b981; min-width:28px;">5</span>
+                                <div>
+                                    <div style="font-weight:700; color:white; font-size:0.88rem; margin-bottom:0.2rem;">
+                                        Root cause: Why has it been treated as a cost centre?</div>
+                                    <div style="color:rgba(255,255,255,0.65); font-size:0.85rem;">Because there is no
+                                        product ownership of the post-purchase experience. No one is responsible for
+                                        measuring or improving it end-to-end.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div><div class="phase-img"><img src="../assets/images/kapruka/06_root_cause_5_whys.png" alt="Root Cause 5 Whys" onclick="openLightbox('image', this.src)"></div></div>
+            </div>
+
+            <!-- 06 JTBD -->
+            <div class="cs-section">
+                <div class="phase-entry reveal reverse"><div class="phase-text"><div class="phase-num">06</div><p class="phase-tag">Jobs to Be Done</p><h2 class="cs-section-title">What customers are really trying to do</h2><div class="cs-section-body">
+                        <p>Using the <strong>Jobs to Be Done</strong> framework, I identified the core functional,
+                            emotional, and social jobs customers are hiring the complaint system to do — going beyond
+                            "submit a complaint" to understand the real outcomes they need.</p>
+                    </div><div class="cs-insights" style="margin-top:1.5rem;">
+                        <span class="cs-insight-pill" style="border-color:#10b981; color:#065f46;">Functional: Know that
+                            my complaint is registered and being actioned</span>
+                        <span class="cs-insight-pill" style="border-color:#10b981; color:#065f46;">Functional: Track the
+                            status of my resolution without chasing</span>
+                        <span class="cs-insight-pill" style="border-color:#10b981; color:#065f46;">Emotional: Feel heard
+                            and treated fairly when something goes wrong</span>
+                        <span class="cs-insight-pill" style="border-color:#10b981; color:#065f46;">Emotional: Regain
+                            trust in the platform after a bad experience</span>
+                        <span class="cs-insight-pill" style="border-color:#10b981; color:#065f46;">Social: Feel
+                            confident recommending Kapruka despite occasional issues</span>
+                    </div></div><div class="phase-img"><img src="../assets/images/kapruka/07_jtbd.png" alt="Jobs to be Done" onclick="openLightbox('image', this.src)"></div></div>
+            </div>
+
+            <!-- 07 Product Opportunity -->
+            <div class="cs-section">
+                <div class="reveal">
+                    <div class="cs-section-num">07</div>
+                    <p class="cs-section-label kap">Product Opportunity</p>
+                    <h2 class="cs-section-title">The gap is the opportunity</h2>
+                    <div class="cs-section-body">
+                        <p>The root cause analysis and JTBD work made the product opportunity clear: Kapruka needs a
+                            structured, transparent, customer-facing complaint resolution experience — built as a
+                            product
+                            feature, not a back-office process.</p>
+                        <p>This is not about adding a chatbot or a contact form. It is about building a resolution
+                            journey with clear ownership, SLA-backed timelines, customer visibility, and escalation
+                            logic.</p>
+                    </div>
+                    <div class="cs-callout kap" style="margin-top:1.5rem;">
+                        <div class="cs-callout-title">Opportunity Statement</div>
+                        <p>How might we give Kapruka customers full visibility and confidence in their complaint
+                            resolution journey — from submission to close — so that even when something goes wrong, the
+                            experience strengthens rather than erodes their trust?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 08 Alternative Approaches -->
+            <div class="cs-section">
+                <div class="reveal">
+                    <div class="cs-section-num">08</div>
+                    <p class="cs-section-label kap">Alternative Approaches</p>
+                    <h2 class="cs-section-title">Four paths. One right answer.</h2>
+                    <div class="cs-section-body">
+                        <p>Before committing to a solution, I evaluated four distinct approaches to solving the
+                            post-purchase support problem:</p>
+                    </div>
+                    <div class="cs-pain-cards" style="margin-top:1.5rem;">
+                        <div class="cs-pain-card kap">
+                            <div class="cs-pain-card-title">Option A — Chatbot / AI first response</div>
+                            <div class="cs-pain-card-body">Automate initial complaint triage using AI. Fast
+                                implementation but doesn't address the core resolution visibility problem.</div>
+                        </div>
+                        <div class="cs-pain-card kap">
+                            <div class="cs-pain-card-title">Option B — Email ticketing system</div>
+                            <div class="cs-pain-card-body">Structured email-based ticketing with reference numbers. Low
+                                complexity but poor customer visibility and lacks real-time tracking.</div>
+                        </div>
+                        <div class="cs-pain-card kap">
+                            <div class="cs-pain-card-title">Option C — In-app resolution tracker</div>
+                            <div class="cs-pain-card-body">A dedicated in-app complaint portal with status tracking,
+                                escalation, and SLA timers. Highest effort, highest impact.</div>
+                        </div>
+                        <div class="cs-pain-card kap">
+                            <div class="cs-pain-card-title">Option D — Third-party helpdesk</div>
+                            <div class="cs-pain-card-body">Integrate an off-the-shelf solution like Zendesk. Faster to
+                                deploy but adds vendor dependency and limits customisation.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 09 RICE -->
+            <div class="cs-section">
+                <div class="phase-entry reveal"><div class="phase-text"><div class="phase-num">09</div><p class="phase-tag">RICE Prioritisation</p><h2 class="cs-section-title">Scoring the options — not guessing</h2><div class="cs-section-body">
+                        <p>I applied the <strong>RICE scoring framework</strong> (Reach, Impact, Confidence, Effort)
+                            to evaluate the four solution approaches objectively:</p>
+                    </div><div style="overflow-x:auto; margin-top:1.5rem;">
+                        <table class="cs-rice-table">
+                            <thead>
+                                <tr>
+                                    <th>Solution</th>
+                                    <th>Reach</th>
+                                    <th>Impact</th>
+                                    <th>Confidence</th>
+                                    <th>Effort</th>
+                                    <th>RICE Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>A — Chatbot / AI</td>
+                                    <td>8</td>
+                                    <td>4</td>
+                                    <td>70%</td>
+                                    <td>3</td>
+                                    <td>74.7</td>
+                                </tr>
+                                <tr>
+                                    <td>B — Email ticketing</td>
+                                    <td>7</td>
+                                    <td>5</td>
+                                    <td>80%</td>
+                                    <td>2</td>
+                                    <td>140</td>
+                                </tr>
+                                <tr class="cs-rice-winner kap">
+                                    <td><strong>C — In-app resolution tracker ✓</strong></td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                    <td>85%</td>
+                                    <td>5</td>
+                                    <td><strong>137.7</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>D — Third-party helpdesk</td>
+                                    <td>8</td>
+                                    <td>7</td>
+                                    <td>75%</td>
+                                    <td>4</td>
+                                    <td>105</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.75rem;">Option C was selected for
+                        its combination of highest customer impact and strong confidence in the evidence base, despite
+                        higher effort — which is justified by the long-term retention value.</p></div><div class="phase-img"><img src="../assets/images/kapruka/08_rice_prioritisation.png" alt="RICE Prioritisation" onclick="openLightbox('image', this.src)"></div></div>
+            </div>
+
+            <!-- 10 Proposed Solution -->
+            <div class="cs-section">
+                <div class="phase-entry reveal reverse"><div class="phase-text"><div class="phase-num">10</div><p class="phase-tag">Proposed Solution</p><h2 class="cs-section-title">A resolution experience customers can trust</h2><div class="cs-section-body">
+                        <p>The proposed solution is an <strong>in-app Post-Purchase Resolution Centre</strong> — a
+                            dedicated
+                            complaint management experience built into the Kapruka platform that gives customers full
+                            transparency and accountability throughout their resolution journey.</p>
+                        <p>Core features of the proposed solution:</p>
+                    </div><div class="cs-insights" style="margin-top:1rem;">
+                        <span class="cs-insight-pill" style="border-color:#10b981; color:#065f46;">Instant complaint
+                            acknowledgement with unique reference ID</span>
+                        <span class="cs-insight-pill" style="border-color:#10b981; color:#065f46;">Real-time status
+                            tracker (Logged → In Review → Resolved)</span>
+                        <span class="cs-insight-pill" style="border-color:#10b981; color:#065f46;">SLA timers visible to
+                            the customer</span>
+                        <span class="cs-insight-pill" style="border-color:#10b981; color:#065f46;">Structured escalation
+                            trigger at SLA breach</span>
+                        <span class="cs-insight-pill" style="border-color:#10b981; color:#065f46;">Service recovery
+                            options (refund / replacement / voucher)</span>
+                        <span class="cs-insight-pill" style="border-color:#10b981; color:#065f46;">Post-resolution
+                            satisfaction prompt</span>
+                    </div></div><div class="phase-img"><img src="../assets/images/kapruka/09_solution_overview.png" alt="Solution Overview" onclick="openLightbox('image', this.src)"></div></div>
+            </div>
+
+            <!-- 11 User Flow -->
+            <div class="cs-section">
+                <div class="phase-entry reveal"><div class="phase-text"><div class="phase-num">11</div><p class="phase-tag">Customer Experience / User Flow</p><h2 class="cs-section-title">The resolution journey, step by step</h2><div class="cs-section-body">
+                        <p>The proposed customer journey moves from a fragmented, opaque experience to a structured,
+                            trackable resolution flow:</p>
+                    </div><div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1.5rem; align-items:center;">
+                        <div style="background:var(--navy); color:white; padding:0.6rem 1.2rem; border-radius:8px; font-size:0.82rem; font-weight:600;">
+                            Issue Identified</div>
+                        <span style="color:var(--text-muted);">→</span>
+                        <div style="background:var(--navy); color:white; padding:0.6rem 1.2rem; border-radius:8px; font-size:0.82rem; font-weight:600;">
+                            Complaint Submitted</div>
+                        <span style="color:var(--text-muted);">→</span>
+                        <div style="background:#10b981; color:white; padding:0.6rem 1.2rem; border-radius:8px; font-size:0.82rem; font-weight:600;">
+                            Instant Acknowledgement + ID</div>
+                        <span style="color:var(--text-muted);">→</span>
+                        <div style="background:#10b981; color:white; padding:0.6rem 1.2rem; border-radius:8px; font-size:0.82rem; font-weight:600;">
+                            Status Tracker Active</div>
+                        <span style="color:var(--text-muted);">→</span>
+                        <div style="background:var(--navy); color:white; padding:0.6rem 1.2rem; border-radius:8px; font-size:0.82rem; font-weight:600;">
+                            Agent Review</div>
+                        <span style="color:var(--text-muted);">→</span>
+                        <div style="background:#10b981; color:white; padding:0.6rem 1.2rem; border-radius:8px; font-size:0.82rem; font-weight:600;">
+                            Resolution Offered</div>
+                        <span style="color:var(--text-muted);">→</span>
+                        <div style="background:#10b981; color:white; padding:0.6rem 1.2rem; border-radius:8px; font-size:0.82rem; font-weight:600;">
+                            Customer Confirms</div>
+                        <span style="color:var(--text-muted);">→</span>
+                        <div style="background:var(--navy); color:white; padding:0.6rem 1.2rem; border-radius:8px; font-size:0.82rem; font-weight:600;">
+                            Case Closed + Satisfaction Prompt</div>
+                    </div><p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.75rem;">At any SLA breach point,
+                        the system automatically escalates to a senior agent and notifies the customer.</p></div><div class="phase-img"><img src="../assets/images/kapruka/10_UML_Activity.png" alt="UML Activity Diagram" onclick="openLightbox('image', this.src)"></div></div>
+            </div>
+
+            <!-- 12 Figma Screens -->
+            <div class="cs-section">
+                <div class="phase-entry reveal reverse"><div class="phase-text"><div class="phase-num">12</div><p class="phase-tag">High-Fidelity Figma Screens</p><h2 class="cs-section-title">What it looks like</h2><div class="cs-section-body">
+                        <p>High-fidelity Figma prototypes were designed for the key screens of the Resolution Centre,
+                            including the complaint submission flow, status tracker, and escalation modal.</p>
+                    </div></div><div class="phase-img"><img src="../assets/images/kapruka/11_High_Fidelity_Sceens.png" alt="High Fidelity Screens" onclick="openLightbox('image', this.src)"></div></div>
+            </div>
+
+            <!-- 13 SLA Logic -->
+            <div class="cs-section">
+                <div class="reveal">
+                    <div class="cs-section-num">13</div>
+                    <p class="cs-section-label kap">SLA &amp; Escalation Logic</p>
+                    <h2 class="cs-section-title">Accountability built into the system</h2>
+                    <div class="cs-section-body">
+                        <p>The proposed SLA framework defines response time targets by complaint severity and builds
+                            automatic escalation triggers when those targets are breached:</p>
+                    </div>
+                    <div style="overflow-x:auto; margin-top:1.5rem;">
+                        <table class="cs-rice-table">
+                            <thead>
+                                <tr>
+                                    <th>Complaint Type</th>
+                                    <th>Initial Response SLA</th>
+                                    <th>Resolution SLA</th>
+                                    <th>Escalation Trigger</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Missing order</td>
+                                    <td>2 hours</td>
+                                    <td>24 hours</td>
+                                    <td>At 24h breach → Senior agent</td>
+                                </tr>
+                                <tr>
+                                    <td>Damaged item</td>
+                                    <td>4 hours</td>
+                                    <td>48 hours</td>
+                                    <td>At 48h breach → Manager review</td>
+                                </tr>
+                                <tr>
+                                    <td>Late delivery</td>
+                                    <td>4 hours</td>
+                                    <td>48 hours</td>
+                                    <td>At 48h breach → Senior agent</td>
+                                </tr>
+                                <tr>
+                                    <td>Incorrect item</td>
+                                    <td>2 hours</td>
+                                    <td>24 hours</td>
+                                    <td>At 24h breach → Senior agent</td>
+                                </tr>
+                                <tr>
+                                    <td>General enquiry</td>
+                                    <td>8 hours</td>
+                                    <td>72 hours</td>
+                                    <td>At 72h breach → Team lead</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 14 Service Recovery -->
+            <div class="cs-section">
+                <div class="reveal">
+                    <div class="cs-section-num">14</div>
+                    <p class="cs-section-label kap">Service-Recovery Points</p>
+                    <h2 class="cs-section-title">Closing the experience loop</h2>
+                    <div class="cs-section-body">
+                        <p>Service recovery is not just about fixing the problem — it is about restoring the customer
+                            relationship. The proposed system includes structured recovery options tied to complaint
+                            type
+                            and severity:</p>
+                    </div>
+                    <div class="cs-insights" style="margin-top:1rem;">
+                        <span class="cs-insight-pill" style="border-color:#10b981; color:#065f46;">Full refund for
+                            missing or damaged high-value orders</span>
+                        <span class="cs-insight-pill" style="border-color:#10b981; color:#065f46;">Replacement dispatch
+                            with expedited shipping</span>
+                        <span class="cs-insight-pill" style="border-color:#10b981; color:#065f46;">Store credit /
+                            voucher for lower-value resolution cases</span>
+                        <span class="cs-insight-pill" style="border-color:#10b981; color:#065f46;">Personalised apology
+                            communication for SLA breaches</span>
+                        <span class="cs-insight-pill" style="border-color:#10b981; color:#065f46;">Post-resolution
+                            satisfaction prompt (CSAT)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 15 Jira Readiness -->
+            <div class="cs-section">
+                <div class="reveal">
+                    <div class="cs-section-num">15</div>
+                    <p class="cs-section-label kap">Jira Implementation Readiness</p>
+                    <h2 class="cs-section-title">From strategy to sprint-ready backlog</h2>
+                    <div class="cs-section-body">
+                        <p>The proposed solution was broken down into a sprint-ready Jira backlog with epics, stories,
+                            and acceptance criteria — demonstrating how this case study translates into real delivery.
+                        </p>
+                    </div>
+                    <div style="margin-top:1.5rem; display:flex; flex-direction:column; gap:0.75rem;">
+                        <div style="display:flex; gap:1rem; align-items:flex-start; padding:1rem 1.25rem; background:#fafbfc; border-radius:10px; border:1px solid #eaecf0;">
+                            <span style="background:#10b981; color:white; font-size:0.65rem; font-weight:700; padding:0.2rem 0.6rem; border-radius:4px; white-space:nowrap;">EPIC</span>
+                            <div style="font-weight:600; color:var(--navy); font-size:0.88rem;">Complaint Submission
+                                &amp; Acknowledgement</div>
+                        </div>
+                        <div style="display:flex; gap:1rem; align-items:flex-start; padding:1rem 1.25rem; background:#fafbfc; border-radius:10px; border:1px solid #eaecf0;">
+                            <span style="background:#10b981; color:white; font-size:0.65rem; font-weight:700; padding:0.2rem 0.6rem; border-radius:4px; white-space:nowrap;">EPIC</span>
+                            <div style="font-weight:600; color:var(--navy); font-size:0.88rem;">Resolution Status
+                                Tracker</div>
+                        </div>
+                        <div style="display:flex; gap:1rem; align-items:flex-start; padding:1rem 1.25rem; background:#fafbfc; border-radius:10px; border:1px solid #eaecf0;">
+                            <span style="background:#10b981; color:white; font-size:0.65rem; font-weight:700; padding:0.2rem 0.6rem; border-radius:4px; white-space:nowrap;">EPIC</span>
+                            <div style="font-weight:600; color:var(--navy); font-size:0.88rem;">SLA Monitoring &amp;
+                                Escalation Engine</div>
+                        </div>
+                        <div style="display:flex; gap:1rem; align-items:flex-start; padding:1rem 1.25rem; background:#fafbfc; border-radius:10px; border:1px solid #eaecf0;">
+                            <span style="background:#0d1f4a; color:white; font-size:0.65rem; font-weight:700; padding:0.2rem 0.6rem; border-radius:4px; white-space:nowrap;">STORY</span>
+                            <div style="color:#4b5563; font-size:0.85rem;">As a customer, I want to receive an instant
+                                reference number when I submit a complaint so that I know my issue has been registered.
+                            </div>
+                        </div>
+                        <div style="display:flex; gap:1rem; align-items:flex-start; padding:1rem 1.25rem; background:#fafbfc; border-radius:10px; border:1px solid #eaecf0;">
+                            <span style="background:#0d1f4a; color:white; font-size:0.65rem; font-weight:700; padding:0.2rem 0.6rem; border-radius:4px; white-space:nowrap;">STORY</span>
+                            <div style="color:#4b5563; font-size:0.85rem;">As a customer, I want to see the current
+                                status of my complaint in real time so that I do not need to contact support to find
+                                out.</div>
+                        </div>
+                        <div style="display:flex; gap:1rem; align-items:flex-start; padding:1rem 1.25rem; background:#fafbfc; border-radius:10px; border:1px solid #eaecf0;">
+                            <span style="background:#0d1f4a; color:white; font-size:0.65rem; font-weight:700; padding:0.2rem 0.6rem; border-radius:4px; white-space:nowrap;">STORY</span>
+                            <div style="color:#4b5563; font-size:0.85rem;">As an agent, I want to be automatically
+                                notified when an SLA is about to be breached so that I can prioritise that case
+                                immediately.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 16 Success Metrics -->
+            <div class="cs-section">
+                <div class="reveal">
+                    <div class="cs-section-num">16</div>
+                    <p class="cs-section-label kap">Success Metrics</p>
+                    <h2 class="cs-section-title">How we know it's working</h2>
+                    <div class="cs-section-body">
+                        <p>A successful Resolution Centre should move the needle on these measurable outcomes:</p>
+                    </div>
+                    <div class="cs-pain-cards" style="margin-top:1.5rem;">
+                        <div class="cs-pain-card kap">
+                            <div class="cs-pain-card-title">CSAT score</div>
+                            <div class="cs-pain-card-body">Target: ≥ 4.0/5.0 on post-resolution satisfaction prompts
+                                within 90 days of launch.</div>
+                        </div>
+                        <div class="cs-pain-card kap">
+                            <div class="cs-pain-card-title">SLA compliance rate</div>
+                            <div class="cs-pain-card-body">Target: ≥ 85% of complaints resolved within the defined SLA
+                                window, measured weekly.</div>
+                        </div>
+                        <div class="cs-pain-card kap">
+                            <div class="cs-pain-card-title">Repeat complaint rate</div>
+                            <div class="cs-pain-card-body">Target: Reduce repeat contacts on the same complaint by ≥ 40%
+                                within 60 days of launch.</div>
+                        </div>
+                        <div class="cs-pain-card kap">
+                            <div class="cs-pain-card-title">Resolution centre adoption</div>
+                            <div class="cs-pain-card-body">Target: ≥ 70% of complaints submitted via the in-app centre
+                                (vs. email/phone) within 6 months.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 17 Reflection -->
+            <div class="cs-section">
+                <div class="phase-entry reveal"><div class="phase-text"><div class="phase-num">17</div><p class="phase-tag">Reflection / What I Learned</p><h2 class="cs-section-title">What this built in me</h2><div class="cs-section-body">
+                        <p>This case study reinforced one belief above all others: <strong>the best product thinking
+                                starts with evidence, not with assumptions.</strong></p>
+                        <p>The 87 reviews I analysed weren't just data — they were real people describing real
+                            frustration. The 5 Whys exercise showed me that what looks like a customer service failure
+                            is often a product failure at its root. The RICE scoring forced me to confront my own biases
+                            about which solution "felt" right.</p>
+                        <p>Most importantly, this case study showed me that the post-purchase experience is not a cost
+                            centre. It is a retention product. And building it properly requires the same rigour, the
+                            same evidence, and the same accountability that you would bring to building anything else.
+                        </p>
+                    </div></div><div class="phase-img"><img src="../assets/images/kapruka/12_Conclusion.png" alt="Conclusion Evidence" onclick="openLightbox('image', this.src)"></div></div>
+            </div>
+
+            <div style="margin-top: 4rem; padding-bottom: 2rem;">
+                <img src="../assets/images/kapruka/13_FinalCoverPage.png" alt="Closing Cover Page" style="width:100%; border-radius:12px; box-shadow: 0 20px 60px rgba(0,0,0,0.15);" onclick="openLightbox('image', this.src)">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CROSS-NAVIGATION -->
+    <nav class="case-study-nav" aria-label="Project navigation">
+        <div class="case-study-nav-inner">
+            <a href="buslink.html" class="cs-nav-link">
+                <span class="cs-nav-link-dir">← Previous Case Study</span>
+                <span class="cs-nav-link-title">BusLink</span>
+            </a>
+            <div style="display:flex; gap:1rem; align-items:center;">
+                <a href="index.html" class="cs-nav-back">Back to Projects</a>
+                <a href="../index.html" class="cs-nav-back">Home</a>
+            </div>
+            <!-- Empty div to balance space-between so the middle buttons stay centered -->
+            <div style="width:140px;"></div>
+        </div>
+    </nav>
+
+    <footer>
+        <p>© 2025 Demian de Silva · Built to prove a point.</p>
+    </footer>
+
+    <div id="lightbox" onclick="handleLightboxClick(event)">
+        <button id="lightbox-close" onclick="closeLightbox()" aria-label="Close">×</button>
+        <img id="lightbox-img" src="" alt="Expanded view">
+        <video id="lightbox-video" controls=""></video>
+    </div>
+
+    <script src="../script.js"></script>
+
+
+</body></html>
