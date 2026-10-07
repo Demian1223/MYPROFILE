@@ -1,0 +1,674 @@
+{
+  "commit": "ffcb35186a909eae1fc6aadd1fdbdc451c511f07",
+  "canonicalKapruka": "projects/kapruka.html",
+  "pages": {
+    "index.html": {
+      "text": "Demian de Silva TV Speaking Projects Leadership Contact Download CV Product & Project Manager · Sri Lanka Demian de Silva Product & Project Manager My experience speaks before my title. I've shipped a product and delivered projects end-to-end planning, scheduling, stakeholder coordination, and validation. I've spoken on national TV, led stakeholder research with 102 participants, and been elected by my peers - twice. Scroll to see what I've actually done. See My Work Download CV Scroll 11+ Stakeholders across 5 groups interviewed 300+ Test cases validated in BusLink 99.65% Pass rate - not assumed, audited First National TV Appearance Featured on Sirasa TV Selected to represent my university on Sirasa TV, I made my first live national television appearance with only minutes to communicate a clear and engaging message to a national audience. The experience tested the same skills I bring to product management: understanding what needs to be communicated, shaping the message for an audience, pitching with confidence, and staying composed when the pressure is real. A live test of my ability to communicate clearly, pitch confidently, and perform under pressure. As seen on Sirasa TV 🔴 Sirasa TV Strong Advocate A Voice Speaking & Media Career Compass Selected as a student speaker and panel interviewer, I led conversations with professionals across business, finance, and technology-asking the questions students needed answered and translating real-world industry experience into clear career pathways. On stage - Career Compass Panel with industry leaders Sharing career insights On the same stage as Altrium · Sentiva · 99X · Surge Global · Abans Finance Product / Project Management SelectedProduct & Project Manager Work Research-led, evidence-based product thinking from problem discovery to shipped solutions. I also lead project delivery: creating roadmaps, managing scope, coordinating cross-functional teams, and validating outcomes against success criteria. 01 Capstone Project · Staffordshire University BusLink Research-led smart bus reservation product built through discovery, stakeholder research, Agile delivery and validation. 102 Surveys · 10+ Interviews · 3 Sprints · 300+ Test Cases Product Discovery User Research Agile UX Validation Project Delivery View Project 02 Independent Case Study · Kapruka Closing the Loop Kapruka post-purchase support case study focused on transparent complaint tracking, resolution accountability and service recovery. 87 Reviews · RICE · Figma · Jira Customer Research 5 Whys JTBD RICE Product Strategy Project Management View Project View All Projects → The Hard Way Two Degrees, One Exhausting, Worthwhile Journey I started as a Software Engineering undergraduate. Partway in, with my family's encouragement, I took on a second major, Business Management, alongside it. Coding deadlines and business assignments colliding in the same week nearly broke me more than once. But that double load gave me something most people don't have: technical fluency and business thinking, together. It's exactly what pulled me toward Product Management. Software Engineering Business Management Elected Leadership Elected by peers. Not once - twice. Trust like that isn't given on day one. It's built progressively through consistency, showing up for people, and proving you'll represent their interests before you ever ask for the role. I've done that at two separate institutions. APIIT Sri Lanka Batch Representative ESOFT Metro Campus Batch Representative Stakeholder Trust Peer Advocacy Conflict Resolution Consistency Communication Representation Project Delivery Roadmapping Stakeholder Coordination A Bit of a Detour Commerce student. Psychology certified. Never touched science since O/Levels. Taking on a Psychology certification wasn't the safe choice - it was a genuine risk stepping outside my commerce background. But hard work and determination got me through it, and it turned out to be one of the most useful things I've ever studied. I learned how people actually think - what a hesitant pause means, what a raised eyebrow signals, why users say one thing and do another. That's not a side skill for a Product Manager. That's the whole job. One More Thing Best CompereIntermediate - 2022 St. Thomas' College Beyond psychology, I am also certified in Media Presentation & Communications and was awarded Best Compère – Intermediate Level in 2022. It strengthened my ability to read an audience, communicate clearly, and hold attention-skills I now bring into stakeholder conversations, product pitches, and presentations. Let's Talk Still not convinced? I've shown you the research, the product, the stages, and the proof. If you're hiring for someone who thinks before they build - let's talk. Get In Touch Download Full CV demiandesilva47@gmail.com · LinkedIn © 2025 Demian de Silva · Built to prove a point. ×",
+      "headings": [
+        "Demian de Silva",
+        "Featured on Sirasa TV",
+        "Career Compass",
+        "SelectedProduct & Project Manager Work",
+        "BusLink",
+        "Closing the Loop",
+        "Two Degrees, One Exhausting, Worthwhile Journey",
+        "Elected by peers. Not once - twice.",
+        "Commerce student. Psychology certified. Never touched science since O/Levels.",
+        "Best CompereIntermediate - 2022",
+        "Still not convinced?"
+      ],
+      "sections": [
+        "hero",
+        "achievement-wall",
+        "tv",
+        "media",
+        "product-work",
+        "journey",
+        "batchrep",
+        "psychology",
+        "compere",
+        "closing"
+      ],
+      "links": [
+        "#hero",
+        "#tv",
+        "#media",
+        "projects/index.html",
+        "#batchrep",
+        "#closing",
+        "assets/PDFS/CV_PM.pdf",
+        "#product-work",
+        "assets/PDFS/CV_PM.pdf",
+        "projects/buslink.html",
+        "projects/kapruka.html",
+        "projects/index.html",
+        "mailto:demiandesilva47@gmail.com",
+        "assets/PDFS/CV_PM.pdf",
+        "mailto:demiandesilva47@gmail.com",
+        "https://www.linkedin.com/in/demian-de-silva-883bab320/"
+      ],
+      "media": [
+        {
+          "src": "assets/images/Me.jpeg"
+        },
+        {
+          "src": "assets/images/TV1.jpeg"
+        },
+        {
+          "src": "assets/images/TV2.jpeg"
+        },
+        {
+          "src": "assets/images/TV3.jpeg"
+        },
+        {
+          "poster": "assets/images/TV2.jpeg"
+        },
+        {
+          "src": "assets/Videos/SISRSAVEDIO.mp4"
+        },
+        {
+          "src": "assets/images/COMPASS1.jpeg"
+        },
+        {
+          "src": "assets/images/COMPASS2.jpeg"
+        },
+        {
+          "src": "assets/images/COMPASS3.jpeg"
+        },
+        {
+          "src": "assets/images/Altrium.png"
+        },
+        {
+          "src": "assets/images/Sentiva.png"
+        },
+        {
+          "src": "assets/images/99X.jpg"
+        },
+        {
+          "src": "assets/images/Surge.jpg"
+        },
+        {
+          "src": "assets/images/Abans.jpg"
+        },
+        {
+          "src": "assets/images/Altrium.png"
+        },
+        {
+          "src": "assets/images/Sentiva.png"
+        },
+        {
+          "src": "assets/images/99X.jpg"
+        },
+        {
+          "src": "assets/images/Surge.jpg"
+        },
+        {
+          "src": "assets/images/Abans.jpg"
+        },
+        {
+          "src": "assets/images/Altrium.png"
+        },
+        {
+          "src": "assets/images/Sentiva.png"
+        },
+        {
+          "src": "assets/images/99X.jpg"
+        },
+        {
+          "src": "assets/images/Surge.jpg"
+        },
+        {
+          "src": "assets/images/Abans.jpg"
+        },
+        {
+          "src": "assets/images/Altrium.png"
+        },
+        {
+          "src": "assets/images/Sentiva.png"
+        },
+        {
+          "src": "assets/images/99X.jpg"
+        },
+        {
+          "src": "assets/images/Surge.jpg"
+        },
+        {
+          "src": "assets/images/Abans.jpg"
+        },
+        {
+          "src": "assets/images/Software.png"
+        },
+        {
+          "src": "assets/images/Business.png"
+        },
+        {
+          "src": "assets/images/APIIT.jpg"
+        },
+        {
+          "src": "assets/images/ESOFT.jpg"
+        },
+        {
+          "src": "assets/images/PSY.jpeg"
+        },
+        {
+          "src": "assets/images/PUBLIC.jpg"
+        },
+        {
+          "src": ""
+        },
+        {
+          "src": "script.js"
+        }
+      ]
+    },
+    "projects/index.html": {
+      "text": "Demian de Silva TV Speaking Projects Leadership Contact Download CV Product & Project Work Product &Project Work Selected projects showing how I approach research, product and project thinking, prioritisation, design, delivery planning and execution. Project Management Delivery SkillsProof & Process I run projects from roadmap to release scope, schedule, risk, and stakeholder alignment are all part of delivery. Roadmapping Scope Management Stakeholder Coordination Jira Notion SLA Design Sprint Planning Risk Mitigation Proof: BusLink planned and delivered in 3 sprints with 300+ test cases and a 99.65% audited pass rate. 01 Smart Bus Reservation System BusLink Staffordshire University Capstone A research-led academic product developed from problem discovery and stakeholder research through prioritisation, UX, Agile execution, project delivery and validation. 102 survey responses 10+ stakeholder interviews 3 Agile sprints 300+ test cases Product Discovery User Research Product Strategy Agile UX Validation Project Delivery Explore BusLink → 02 Post-Purchase Support & Resolution Closing the Loop Kapruka · Independent Case Study An independent product and project management case study exploring how Kapruka could create a more transparent, trackable and accountable post-purchase complaint-resolution journey and how that solution could be delivered end-to-end. 87 customer reviews analysed 4 solution approaches RICE prioritisation Figma prototypes Customer Research 5 Whys JTBD RICE Figma Jira Product Strategy Project Management Explore Kapruka → © 2025 Demian de Silva · ← Back to Portfolio ×",
+      "headings": [
+        "Product &Project Work",
+        "Delivery SkillsProof & Process",
+        "BusLink",
+        "Closing the Loop"
+      ],
+      "sections": [],
+      "links": [
+        "../index.html",
+        "../index.html#tv",
+        "../index.html#media",
+        "index.html",
+        "../index.html#batchrep",
+        "../index.html#closing",
+        "../assets/PDFS/CV_PM.pdf",
+        "buslink.html",
+        "kapruka.html",
+        "../index.html"
+      ],
+      "media": [
+        {
+          "src": "../assets/images/home.png"
+        },
+        {
+          "src": "../assets/images/kapruka/01_cover.png"
+        },
+        {
+          "src": ""
+        },
+        {
+          "src": "../script.js"
+        }
+      ]
+    },
+    "projects/buslink.html": {
+      "text": "Demian de Silva TV Speaking Projects Leadership Contact Download CV Home/ Projects/BusLink Flagship Project · First Class BusLink Smart Bus Reservation System Project Type Staffordshire University Capstone Role Product Manager · Project Manager · Business Analyst · Scrum Master Delivery 3 Agile Sprints Focus Public transport experience My Contribution Discovery User Research Stakeholder Analysis Requirements Prioritisation UX Agile Delivery Validation Project Management Roadmapping Stakeholder Coordination 11+ Stakeholders across 5 groups 102 Survey responses, real commuters 300+ Test cases, manually audited 99.65% Pass rate not assumed, audited BusLink explored how Sri Lanka's public transport reservation experience could be improved through a more structured, user-informed digital journey. Background I didn't just submit a report. I ran BusLink like a real product from day one from problem validation with the SLTB Chairman, to a shipped, test-validated system. Here's every phase, with receipts. 01 Problem Discovery & Framing Validating the problembefore proposing a solution SLTB receives nearly 150 complaints a day. I mapped the problem across economic, social, technological, environmental, political, and institutional dimensions confirming this was a structural issue, not a minor inconvenience. No solution without evidence. 02 Stakeholder & User Research Mapping 15+ stakeholder groups,surveying 102 real commuters I categorized stakeholders into Direct, Indirect, and Remote groups, then ran a 102-response survey and 10+ interviews including with SLTB's Chairman to ground every decision in real user data, not assumptions. 03 Turning Research into Decisions From raw datato a clear user need I built user personas including the SLTB bus conductor to keep both passenger and operator needs visible throughout the entire design process. Data informs the product; the persona keeps it honest. 04 Product Strategy & Prioritization Impact vs. feasibility,not gut feeling I scored every proposed feature on impact and feasibility separating must-build Targets from Quick Wins, future Luxury items, and features to retire entirely. Every cut has a reason. 05 Backlog, Requirements & MVP Scope Managing a realproduct backlog Every feature was logged with a feature ID, user story, and priority level (High / Medium / Low), tracked in Notion turning strategy into a buildable, sequenced plan. Managed in Notion 06 Design & UX Wireframingbefore development I wireframed key flows including the admin CRUD interface before any code was written, so the development team built against a validated structure, not a guess. Design leads development, not the other way around. 07 Sprint Execution 3 sprints. From proposal to a working product. Sprint 1 focused on discovery and proposal, Sprint 2 on build, and Sprint 3 on refinement and validation with real bus conductors. Bus Search Homepage Seat Selection Screen Admin Revenue Dashboard Features of BusLink 08 Validation & Quality Assurance Manually testednot just claimed Every feature was tracked through a manual test log covering scenario ID, description, and execution result backing the 300+ test cases and 99.65% pass rate with real, auditable records. Anyone can write a pass rate. I can show you the log. \"Product management takes guts: the guts to lead, decide, and stand behind the product you build successfully.\" ← Back to Projects Home Next Case Study → Kapruka · Closing the Loop © 2025 Demian de Silva · Built to prove a point. ×",
+      "headings": [
+        "BusLink",
+        "I didn't just submit a report.",
+        "Validating the problembefore proposing a solution",
+        "Mapping 15+ stakeholder groups,surveying 102 real commuters",
+        "From raw datato a clear user need",
+        "Impact vs. feasibility,not gut feeling",
+        "Managing a realproduct backlog",
+        "Wireframingbefore development",
+        "3 sprints. From proposal to a working product.",
+        "Manually testednot just claimed"
+      ],
+      "sections": [],
+      "links": [
+        "../index.html",
+        "../index.html#tv",
+        "../index.html#media",
+        "index.html",
+        "../index.html#batchrep",
+        "../index.html#closing",
+        "../assets/PDFS/CV_PM.pdf",
+        "../index.html",
+        "index.html",
+        "index.html",
+        "../index.html",
+        "kapruka.html"
+      ],
+      "media": [
+        {
+          "src": "../assets/images/Issue.png"
+        },
+        {
+          "src": "../assets/images/Stakeholder.png"
+        },
+        {
+          "src": "../assets/images/Persona.png"
+        },
+        {
+          "src": "../assets/images/Prioritization.png"
+        },
+        {
+          "src": "../assets/images/backlog.png"
+        },
+        {
+          "src": "../assets/images/UIUX.png"
+        },
+        {
+          "src": "../assets/images/home.png"
+        },
+        {
+          "src": "../assets/images/seatsSelection.png"
+        },
+        {
+          "src": "../assets/images/revenue.png"
+        },
+        {
+          "src": "../assets/images/footer.png"
+        },
+        {
+          "src": "../assets/images/testing.png"
+        },
+        {
+          "src": ""
+        },
+        {
+          "src": "../script.js"
+        }
+      ]
+    },
+    "projects/kapruka.html": {
+      "text": "Demian de Silva TV Speaking Projects Leadership Contact Download CV Home/ Projects/Kapruka Independent Case Study · Kapruka Closingthe Loop Rethinking Kapruka's Post-Purchase Support & Resolution Experience Project Type Independent PM Case Study Company Context KaprukaSri Lanka's leading e-commerce platform Focus Post-purchase support & complaint resolution My Contribution Customer Research Review Analysis Journey Mapping 5 Whys JTBD RICE Figma Jira Product Strategy Project Management Roadmapping SLA Design 87 Customer reviews analysed 4 Solution approaches evaluated 5 Why root-cause layers RICE Evidence-based prioritisation When a Kapruka customer reports a problem a damaged item, a late delivery, a missing order what happens next is unclear, untrackable, and often unresolved. This case study explores how that experience could change. 01Problem Context & DefinitionThe post-purchase gap that erodes trust Kapruka is Sri Lanka's leading e-commerce platform. While their ordering and delivery experience has matured significantly, the post-purchase support journey specifically complaint handling and resolution remains opaque, slow, and frustrating for customers. Customers have no visibility into whether their complaint was received, no tracking of resolution progress, and no clear escalation path when issues remain unresolved. This is a product gap, not just a customer service problem. The Product Opportunity A structured, transparent, and accountable post-purchase resolution experience could significantly improve customer retention, reduce repeat complaints, and build long-term brand trust in a market where trust is the primary competitive differentiator. 02Customer Evidence Research87 reviews. Real signal, not assumption. I analysed 87 customer reviews and support interactions across Google Reviews, Facebook, and Kapruka's own feedback channels. The analysis identified recurring complaint patterns, sentiment clusters, and the specific failure points in the current support journey. The goal was to avoid building a solution for a problem I assumed existed. The data had to confirm it first. Customers report not receiving any confirmation their complaint was logged Resolution timelines are not communicated No escalation path when initial response is unsatisfactory Repeat complainers report feeling ignored Damaged/missing items dominate complaint volume 03Current Kapruka Support JourneyMapping what happens today Before proposing anything, I mapped the current support flow as experienced by the customer from identifying the issue through to (attempted) resolution. The journey map exposed exactly where the experience breaks down. 04Pain PointsWhere the experience breaks down From the review analysis and journey mapping, four primary pain points emerged consistently: No complaint acknowledgement Customers receive no confirmation that their complaint has been received or logged, leaving them uncertain whether any action will follow. Zero resolution visibility There is no tracking system for resolution status. Customers cannot see what stage their complaint is at or when to expect a response. No escalation path When a first response is unsatisfactory, customers have no structured way to escalate. This leads to repeat contacts and frustration. Inconsistent resolution Similar complaints receive different outcomes depending on who handles them. There is no SLA or accountability framework in place. 05Root Cause Analysis 5 WhysGetting beneath the symptoms To avoid solving surface-level symptoms, I applied the 5 Whys technique to the primary pain point: customers don't know what's happening with their complaint. 1 Why don't customers know what's happening? Because there is no status update system after a complaint is logged. 2 Why is there no status update system? Because complaint handling is managed manually without a structured ticketing workflow. 3 Why is complaint handling unstructured? Because there is no defined SLA, escalation path, or ownership framework for support cases. 4 Why is there no SLA or accountability framework? Because post-purchase support has not been treated as a product problem it has been treated as a cost centre. 5 Root cause: Why has it been treated as a cost centre? Because there is no product ownership of the post-purchase experience. No one is responsible for measuring or improving it end-to-end. 06Jobs to Be DoneWhat customers are really trying to do Using the Jobs to Be Done framework, I identified the core functional, emotional, and social jobs customers are hiring the complaint system to do going beyond \"submit a complaint\" to understand the real outcomes they need. Functional: Know that my complaint is registered and being actioned Functional: Track the status of my resolution without chasing Emotional: Feel heard and treated fairly when something goes wrong Emotional: Regain trust in the platform after a bad experience Social: Feel confident recommending Kapruka despite occasional issues 07 Product Opportunity The gap is the opportunity The root cause analysis and JTBD work made the product opportunity clear: Kapruka needs a structured, transparent, customer-facing complaint resolution experience built as a product feature, not a back-office process. This is not about adding a chatbot or a contact form. It is about building a resolution journey with clear ownership, SLA-backed timelines, customer visibility, and escalation logic. Opportunity Statement How might we give Kapruka customers full visibility and confidence in their complaint resolution journey from submission to close so that even when something goes wrong, the experience strengthens rather than erodes their trust? 08 Alternative Approaches Four paths. One right answer. Before committing to a solution, I evaluated four distinct approaches to solving the post-purchase support problem: Option A Chatbot / AI first response Automate initial complaint triage using AI. Fast implementation but doesn't address the core resolution visibility problem. Option B Email ticketing system Structured email-based ticketing with reference numbers. Low complexity but poor customer visibility and lacks real-time tracking. Option C In-app resolution tracker A dedicated in-app complaint portal with status tracking, escalation, and SLA timers. Highest effort, highest impact. Option D Third-party helpdesk Integrate an off-the-shelf solution like Zendesk. Faster to deploy but adds vendor dependency and limits customisation. 09RICE PrioritisationScoring the options not guessing I applied the RICE scoring framework (Reach, Impact, Confidence, Effort) to evaluate the four solution approaches objectively: APPROACH REACH (users/month) IMPACT (1–3) CONFIDENCE (%) EFFORT (1–5) RICE SCORE ((R × I × C) ÷ E) Centralized Self-Service Resolution ✓ 360 3 70% 3 252 Dedicated Human Case Ownership 360 3 65% 4 175.5 Intelligent Support & Escalation 360 2 85% 5 122.4 Automated Resolution Communication 360 1 45% 2 81 Centralized Self-Service Resolution was selected as the highest-priority solution based on RICE (252), driven by high reach and strong impact/confidence relative to effort. 10Proposed SolutionA resolution experience customers can trust The proposed solution is an in-app Post-Purchase Resolution Centre a dedicated complaint management experience built into the Kapruka platform that gives customers full transparency and accountability throughout their resolution journey. Core features of the proposed solution: Instant complaint acknowledgement with unique reference ID Real-time status tracker (Logged → In Review → Resolved) SLA timers visible to the customer Structured escalation trigger at SLA breach Service recovery options (refund / replacement / voucher) Post-resolution satisfaction prompt 11Customer Experience / User FlowThe resolution journey, step by step The proposed customer journey moves from a fragmented, opaque experience to a structured, trackable resolution flow: Issue Identified → Complaint Submitted → Instant Acknowledgement + ID → Status Tracker Active → Agent Review → Resolution Offered → Customer Confirms → Case Closed + Satisfaction Prompt At any SLA breach point, the system automatically escalates to a senior agent and notifies the customer. 12High-Fidelity Figma ScreensWhat it looks like High-fidelity Figma prototypes were designed for the key screens of the Resolution Centre, including the complaint submission flow, status tracker, and escalation modal. 13 SLA & Escalation Logic Accountability built into the system The proposed SLA framework defines response time targets by complaint severity and builds automatic escalation triggers when those targets are breached: Complaint Type Initial Response SLA Resolution SLA Escalation Trigger Missing order 2 hours 24 hours At 24h breach → Senior agent Damaged item 4 hours 48 hours At 48h breach → Manager review Late delivery 4 hours 48 hours At 48h breach → Senior agent Incorrect item 2 hours 24 hours At 24h breach → Senior agent General enquiry 8 hours 72 hours At 72h breach → Team lead 14 Service-Recovery Points Closing the experience loop Service recovery is not just about fixing the problem it is about restoring the customer relationship. The proposed system includes structured recovery options tied to complaint type and severity: Full refund for missing or damaged high-value orders Replacement dispatch with expedited shipping Store credit / voucher for lower-value resolution cases Personalised apology communication for SLA breaches Post-resolution satisfaction prompt (CSAT) 15 Jira Implementation Readiness From strategy to sprint-ready backlog The proposed solution was broken down into a sprint-ready Jira backlog with epics, stories, and acceptance criteria demonstrating how this case study translates into real delivery. EPIC Complaint Submission & Acknowledgement EPIC Resolution Status Tracker EPIC SLA Monitoring & Escalation Engine STORY As a customer, I want to receive an instant reference number when I submit a complaint so that I know my issue has been registered. STORY As a customer, I want to see the current status of my complaint in real time so that I do not need to contact support to find out. STORY As an agent, I want to be automatically notified when an SLA is about to be breached so that I can prioritise that case immediately. 16 Success Metrics How we know it's working A successful Resolution Centre should move the needle on these measurable outcomes: CSAT score Target: ≥ 4.0/5.0 on post-resolution satisfaction prompts within 90 days of launch. SLA compliance rate Target: ≥ 85% of complaints resolved within the defined SLA window, measured weekly. Repeat complaint rate Target: Reduce repeat contacts on the same complaint by ≥ 40% within 60 days of launch. Resolution centre adoption Target: ≥ 70% of complaints submitted via the in-app centre (vs. email/phone) within 6 months. 17Reflection / What I LearnedWhat this built in me This case study reinforced one belief above all others: the best product thinking starts with evidence, not with assumptions. The 87 reviews I analysed weren't just data they were real people describing real frustration. The 5 Whys exercise showed me that what looks like a customer service failure is often a product failure at its root. The RICE scoring forced me to confront my own biases about which solution \"felt\" right. Most importantly, this case study showed me that the post-purchase experience is not a cost centre. It is a retention product. And building it properly requires the same rigour, the same evidence, and the same accountability that you would bring to building anything else. ← Previous Case Study BusLink Back to Projects Home © 2025 Demian de Silva · Built to prove a point. ×",
+      "headings": [
+        "Closingthe Loop",
+        "The post-purchase gap that erodes trust",
+        "87 reviews. Real signal, not assumption.",
+        "Mapping what happens today",
+        "Where the experience breaks down",
+        "Getting beneath the symptoms",
+        "What customers are really trying to do",
+        "The gap is the opportunity",
+        "Four paths. One right answer.",
+        "Scoring the options not guessing",
+        "A resolution experience customers can trust",
+        "The resolution journey, step by step",
+        "What it looks like",
+        "Accountability built into the system",
+        "Closing the experience loop",
+        "From strategy to sprint-ready backlog",
+        "How we know it's working",
+        "What this built in me"
+      ],
+      "sections": [],
+      "links": [
+        "../index.html",
+        "../index.html#tv",
+        "../index.html#media",
+        "index.html",
+        "../index.html#batchrep",
+        "../index.html#closing",
+        "../assets/PDFS/CV_PM.pdf",
+        "../index.html",
+        "index.html",
+        "buslink.html",
+        "index.html",
+        "../index.html"
+      ],
+      "media": [
+        {
+          "src": "../assets/images/kapruka/01_cover.png"
+        },
+        {
+          "src": "../assets/images/kapruka/02_executive_summary.png"
+        },
+        {
+          "src": "../assets/images/kapruka/03_customer_feedback_analysi.png"
+        },
+        {
+          "src": "../assets/images/kapruka/04_current_support_journey.png"
+        },
+        {
+          "src": "../assets/images/kapruka/05_pain_points.png"
+        },
+        {
+          "src": "../assets/images/kapruka/06_root_cause_5_whys.png"
+        },
+        {
+          "src": "../assets/images/kapruka/07_jtbd.png"
+        },
+        {
+          "src": "../assets/images/kapruka/08_rice_prioritisation.png"
+        },
+        {
+          "src": "../assets/images/kapruka/09_solution_overview.png"
+        },
+        {
+          "src": "../assets/images/kapruka/10_UML_Activity.png"
+        },
+        {
+          "src": "../assets/images/kapruka/11_High_Fidelity_Sceens.png"
+        },
+        {
+          "src": "../assets/images/kapruka/12_Conclusion.png"
+        },
+        {
+          "src": "../assets/images/kapruka/13_FinalCoverPage.png"
+        },
+        {
+          "src": ""
+        },
+        {
+          "src": "../script.js"
+        }
+      ]
+    },
+    "projects/kapruka_new.html": {
+      "text": "Demian de Silva TV Speaking Projects Leadership Contact Download CV Home/ Projects/Kapruka Independent Case Study · Kapruka Closingthe Loop Rethinking Kapruka's Post-Purchase Support & Resolution Experience Project Type Independent PM Case Study Company Context KaprukaSri Lanka's leading e-commerce platform Focus Post-purchase support & complaint resolution My Contribution Customer Research Review Analysis Journey Mapping 5 Whys JTBD RICE Figma Jira Product Strategy Project Management Roadmapping SLA Design 87 Customer reviews analysed 4 Solution approaches evaluated 5 Why root-cause layers RICE Evidence-based prioritisation When a Kapruka customer reports a problem a damaged item, a late delivery, a missing order what happens next is unclear, untrackable, and often unresolved. This case study explores how that experience could change. 01Problem Context & DefinitionThe post-purchase gap that erodes trust Kapruka is Sri Lanka's leading e-commerce platform. While their ordering and delivery experience has matured significantly, the post-purchase support journey specifically complaint handling and resolution remains opaque, slow, and frustrating for customers. Customers have no visibility into whether their complaint was received, no tracking of resolution progress, and no clear escalation path when issues remain unresolved. This is a product gap, not just a customer service problem. The Product Opportunity A structured, transparent, and accountable post-purchase resolution experience could significantly improve customer retention, reduce repeat complaints, and build long-term brand trust in a market where trust is the primary competitive differentiator. 02Customer Evidence Research87 reviews. Real signal, not assumption. I analysed 87 customer reviews and support interactions across Google Reviews, Facebook, and Kapruka's own feedback channels. The analysis identified recurring complaint patterns, sentiment clusters, and the specific failure points in the current support journey. The goal was to avoid building a solution for a problem I assumed existed. The data had to confirm it first. Customers report not receiving any confirmation their complaint was logged Resolution timelines are not communicated No escalation path when initial response is unsatisfactory Repeat complainers report feeling ignored Damaged/missing items dominate complaint volume 03Current Kapruka Support JourneyMapping what happens today Before proposing anything, I mapped the current support flow as experienced by the customer from identifying the issue through to (attempted) resolution. The journey map exposed exactly where the experience breaks down. 04Pain PointsWhere the experience breaks down From the review analysis and journey mapping, four primary pain points emerged consistently: No complaint acknowledgement Customers receive no confirmation that their complaint has been received or logged, leaving them uncertain whether any action will follow. Zero resolution visibility There is no tracking system for resolution status. Customers cannot see what stage their complaint is at or when to expect a response. No escalation path When a first response is unsatisfactory, customers have no structured way to escalate. This leads to repeat contacts and frustration. Inconsistent resolution Similar complaints receive different outcomes depending on who handles them. There is no SLA or accountability framework in place. 05Root Cause Analysis 5 WhysGetting beneath the symptoms To avoid solving surface-level symptoms, I applied the 5 Whys technique to the primary pain point: customers don't know what's happening with their complaint. 1 Why don't customers know what's happening? Because there is no status update system after a complaint is logged. 2 Why is there no status update system? Because complaint handling is managed manually without a structured ticketing workflow. 3 Why is complaint handling unstructured? Because there is no defined SLA, escalation path, or ownership framework for support cases. 4 Why is there no SLA or accountability framework? Because post-purchase support has not been treated as a product problem it has been treated as a cost centre. 5 Root cause: Why has it been treated as a cost centre? Because there is no product ownership of the post-purchase experience. No one is responsible for measuring or improving it end-to-end. 06Jobs to Be DoneWhat customers are really trying to do Using the Jobs to Be Done framework, I identified the core functional, emotional, and social jobs customers are hiring the complaint system to do going beyond \"submit a complaint\" to understand the real outcomes they need. Functional: Know that my complaint is registered and being actioned Functional: Track the status of my resolution without chasing Emotional: Feel heard and treated fairly when something goes wrong Emotional: Regain trust in the platform after a bad experience Social: Feel confident recommending Kapruka despite occasional issues 07 Product Opportunity The gap is the opportunity The root cause analysis and JTBD work made the product opportunity clear: Kapruka needs a structured, transparent, customer-facing complaint resolution experience built as a product feature, not a back-office process. This is not about adding a chatbot or a contact form. It is about building a resolution journey with clear ownership, SLA-backed timelines, customer visibility, and escalation logic. Opportunity Statement How might we give Kapruka customers full visibility and confidence in their complaint resolution journey from submission to close so that even when something goes wrong, the experience strengthens rather than erodes their trust? 08 Alternative Approaches Four paths. One right answer. Before committing to a solution, I evaluated four distinct approaches to solving the post-purchase support problem: Option A Chatbot / AI first response Automate initial complaint triage using AI. Fast implementation but doesn't address the core resolution visibility problem. Option B Email ticketing system Structured email-based ticketing with reference numbers. Low complexity but poor customer visibility and lacks real-time tracking. Option C In-app resolution tracker A dedicated in-app complaint portal with status tracking, escalation, and SLA timers. Highest effort, highest impact. Option D Third-party helpdesk Integrate an off-the-shelf solution like Zendesk. Faster to deploy but adds vendor dependency and limits customisation. 09RICE PrioritisationScoring the options not guessing I applied the RICE scoring framework (Reach, Impact, Confidence, Effort) to evaluate the four solution approaches objectively: APPROACH REACH (users/month) IMPACT (1–3) CONFIDENCE (%) EFFORT (1–5) RICE SCORE ((R × I × C) ÷ E) Centralized Self-Service Resolution ✓ 360 3 70% 3 252 Dedicated Human Case Ownership 360 3 65% 4 175.5 Intelligent Support & Escalation 360 2 85% 5 122.4 Automated Resolution Communication 360 1 45% 2 81 Centralized Self-Service Resolution was selected as the highest-priority solution based on RICE (252), driven by high reach and strong impact/confidence relative to effort. 10Proposed SolutionA resolution experience customers can trust The proposed solution is an in-app Post-Purchase Resolution Centre a dedicated complaint management experience built into the Kapruka platform that gives customers full transparency and accountability throughout their resolution journey. Core features of the proposed solution: Instant complaint acknowledgement with unique reference ID Real-time status tracker (Logged → In Review → Resolved) SLA timers visible to the customer Structured escalation trigger at SLA breach Service recovery options (refund / replacement / voucher) Post-resolution satisfaction prompt 11Customer Experience / User FlowThe resolution journey, step by step The proposed customer journey moves from a fragmented, opaque experience to a structured, trackable resolution flow: Issue Identified → Complaint Submitted → Instant Acknowledgement + ID → Status Tracker Active → Agent Review → Resolution Offered → Customer Confirms → Case Closed + Satisfaction Prompt At any SLA breach point, the system automatically escalates to a senior agent and notifies the customer. 12High-Fidelity Figma ScreensWhat it looks like High-fidelity Figma prototypes were designed for the key screens of the Resolution Centre, including the complaint submission flow, status tracker, and escalation modal. 13 SLA & Escalation Logic Accountability built into the system The proposed SLA framework defines response time targets by complaint severity and builds automatic escalation triggers when those targets are breached: Complaint Type Initial Response SLA Resolution SLA Escalation Trigger Missing order 2 hours 24 hours At 24h breach → Senior agent Damaged item 4 hours 48 hours At 48h breach → Manager review Late delivery 4 hours 48 hours At 48h breach → Senior agent Incorrect item 2 hours 24 hours At 24h breach → Senior agent General enquiry 8 hours 72 hours At 72h breach → Team lead 14 Service-Recovery Points Closing the experience loop Service recovery is not just about fixing the problem it is about restoring the customer relationship. The proposed system includes structured recovery options tied to complaint type and severity: Full refund for missing or damaged high-value orders Replacement dispatch with expedited shipping Store credit / voucher for lower-value resolution cases Personalised apology communication for SLA breaches Post-resolution satisfaction prompt (CSAT) 15 Jira Implementation Readiness From strategy to sprint-ready backlog The proposed solution was broken down into a sprint-ready Jira backlog with epics, stories, and acceptance criteria demonstrating how this case study translates into real delivery. EPIC Complaint Submission & Acknowledgement EPIC Resolution Status Tracker EPIC SLA Monitoring & Escalation Engine STORY As a customer, I want to receive an instant reference number when I submit a complaint so that I know my issue has been registered. STORY As a customer, I want to see the current status of my complaint in real time so that I do not need to contact support to find out. STORY As an agent, I want to be automatically notified when an SLA is about to be breached so that I can prioritise that case immediately. 16 Success Metrics How we know it's working A successful Resolution Centre should move the needle on these measurable outcomes: CSAT score Target: ≥ 4.0/5.0 on post-resolution satisfaction prompts within 90 days of launch. SLA compliance rate Target: ≥ 85% of complaints resolved within the defined SLA window, measured weekly. Repeat complaint rate Target: Reduce repeat contacts on the same complaint by ≥ 40% within 60 days of launch. Resolution centre adoption Target: ≥ 70% of complaints submitted via the in-app centre (vs. email/phone) within 6 months. 17Reflection / What I LearnedWhat this built in me This case study reinforced one belief above all others: the best product thinking starts with evidence, not with assumptions. The 87 reviews I analysed weren't just data they were real people describing real frustration. The 5 Whys exercise showed me that what looks like a customer service failure is often a product failure at its root. The RICE scoring forced me to confront my own biases about which solution \"felt\" right. Most importantly, this case study showed me that the post-purchase experience is not a cost centre. It is a retention product. And building it properly requires the same rigour, the same evidence, and the same accountability that you would bring to building anything else. ← Previous Case Study BusLink Back to Projects Home © 2025 Demian de Silva · Built to prove a point. ×",
+      "headings": [
+        "Closingthe Loop",
+        "The post-purchase gap that erodes trust",
+        "87 reviews. Real signal, not assumption.",
+        "Mapping what happens today",
+        "Where the experience breaks down",
+        "Getting beneath the symptoms",
+        "What customers are really trying to do",
+        "The gap is the opportunity",
+        "Four paths. One right answer.",
+        "Scoring the options not guessing",
+        "A resolution experience customers can trust",
+        "The resolution journey, step by step",
+        "What it looks like",
+        "Accountability built into the system",
+        "Closing the experience loop",
+        "From strategy to sprint-ready backlog",
+        "How we know it's working",
+        "What this built in me"
+      ],
+      "sections": [],
+      "links": [
+        "../index.html",
+        "../index.html#tv",
+        "../index.html#media",
+        "index.html",
+        "../index.html#batchrep",
+        "../index.html#closing",
+        "../assets/PDFS/CV_PM.pdf",
+        "../index.html",
+        "index.html",
+        "buslink.html",
+        "index.html",
+        "../index.html"
+      ],
+      "media": [
+        {
+          "src": "../assets/images/kapruka/01_cover.png"
+        },
+        {
+          "src": "../assets/images/kapruka/02_executive_summary.png"
+        },
+        {
+          "src": "../assets/images/kapruka/03_customer_feedback_analysi.png"
+        },
+        {
+          "src": "../assets/images/kapruka/04_current_support_journey.png"
+        },
+        {
+          "src": "../assets/images/kapruka/05_pain_points.png"
+        },
+        {
+          "src": "../assets/images/kapruka/06_root_cause_5_whys.png"
+        },
+        {
+          "src": "../assets/images/kapruka/07_jtbd.png"
+        },
+        {
+          "src": "../assets/images/kapruka/08_rice_prioritisation.png"
+        },
+        {
+          "src": "../assets/images/kapruka/09_solution_overview.png"
+        },
+        {
+          "src": "../assets/images/kapruka/10_UML_Activity.png"
+        },
+        {
+          "src": "../assets/images/kapruka/11_High_Fidelity_Sceens.png"
+        },
+        {
+          "src": "../assets/images/kapruka/12_Conclusion.png"
+        },
+        {
+          "src": "../assets/images/kapruka/13_FinalCoverPage.png"
+        },
+        {
+          "src": ""
+        },
+        {
+          "src": "../script.js"
+        }
+      ]
+    }
+  },
+  "assets": [
+    {
+      "path": "assets\\images\\99X.jpg",
+      "size": 9284,
+      "sha256": "ed93431605c170f445b3aa9b0de4d154ec0420d9c08a1a11daf2736afa200841"
+    },
+    {
+      "path": "assets\\images\\Abans.jpg",
+      "size": 9801,
+      "sha256": "53d39a8b8ca4b7154490beb535cf96bc0c83561313e208192ddafd5a9e5a3531"
+    },
+    {
+      "path": "assets\\images\\Altrium.png",
+      "size": 2441,
+      "sha256": "4b04213d414688433204d04a83e493f369e74f5ee0b99bd8564a8146d9abc394"
+    },
+    {
+      "path": "assets\\images\\APIIT.jpg",
+      "size": 33649,
+      "sha256": "b506050bd64ccee5a68e288bb3fe4ae61a34ebe6d7bfcacff55bba1b549d88ae"
+    },
+    {
+      "path": "assets\\images\\backlog.png",
+      "size": 1492777,
+      "sha256": "c6294faf886b6cde1ed00c72e03d6bf944176aacbf046e66eb3413d1d36156e1"
+    },
+    {
+      "path": "assets\\images\\Business.png",
+      "size": 1400363,
+      "sha256": "e07bc9599f9ecc5f827d481776192a7ce7ca46d5756c1bec687dd796e1d56998"
+    },
+    {
+      "path": "assets\\images\\COMPASS1.jpeg",
+      "size": 150114,
+      "sha256": "6efe67995b15be23d23d4a2ab0b0b087d5ef13cbd7be82ed3a86a65d706cba12"
+    },
+    {
+      "path": "assets\\images\\COMPASS2.jpeg",
+      "size": 141561,
+      "sha256": "79b544b8cbb924c53f1eccafb637e642427c71c10e303b19f8364da665b3c6a5"
+    },
+    {
+      "path": "assets\\images\\COMPASS3.jpeg",
+      "size": 127034,
+      "sha256": "45ded8d10e7ebfd38bb9f8ddd1cd60caa611a7167ac77b7bffbd3e62647ff50e"
+    },
+    {
+      "path": "assets\\images\\ESOFT.jpg",
+      "size": 70951,
+      "sha256": "7b2d06c52e462a05e91e957427626d5690d9fe67d7cf919da939842a59be57b4"
+    },
+    {
+      "path": "assets\\images\\footer.png",
+      "size": 1097696,
+      "sha256": "867d57ca40fd39631a06dee5d657093e79543dcb396decbfd5969e4b045bbde6"
+    },
+    {
+      "path": "assets\\images\\home.png",
+      "size": 2224218,
+      "sha256": "5cd257e8e98b3a06de45d889b9cd947975ecd7010e00f057285d1e9a81d87701"
+    },
+    {
+      "path": "assets\\images\\Issue.png",
+      "size": 128138,
+      "sha256": "4210f50f64b0f32695f4dd036aadc932241535b3e8dbd22e08159648f56ce4ce"
+    },
+    {
+      "path": "assets\\images\\kapruka\\01_cover.png",
+      "size": 1669672,
+      "sha256": "ae64e04d33feba78e2a669e64f2df9f09fcb1080222f7ec14acd2cbc427e0db9"
+    },
+    {
+      "path": "assets\\images\\kapruka\\02_executive_summary.png",
+      "size": 1158253,
+      "sha256": "a94cdb8ad532f34655bcc7c215d8889f079c22ab5d972a4babb9b687b0548b3b"
+    },
+    {
+      "path": "assets\\images\\kapruka\\03_customer_feedback_analysi.png",
+      "size": 1415526,
+      "sha256": "3bcd945a990aa580c558cd0de17829445b968ff9469b424093700f33972b5da5"
+    },
+    {
+      "path": "assets\\images\\kapruka\\04_current_support_journey.png",
+      "size": 1536303,
+      "sha256": "7209f130983d68c69156345553dbbb18420a3eba7cf3cf42ef24f3aa46af8d93"
+    },
+    {
+      "path": "assets\\images\\kapruka\\05_pain_points.png",
+      "size": 1515329,
+      "sha256": "4f404a7e59c4f54640596e4ef35bbfb443b7d10d36a26e21641dc3159cb9e0c9"
+    },
+    {
+      "path": "assets\\images\\kapruka\\06_root_cause_5_whys.png",
+      "size": 3600517,
+      "sha256": "eb3e4f11058435c7699d6897838dc5f72de1e93d89cdd1ee3385888cf7c07915"
+    },
+    {
+      "path": "assets\\images\\kapruka\\07_jtbd.png",
+      "size": 1412209,
+      "sha256": "0dec11d8960af3a1f63af800396c6f620784d6b67229897a28d392e1a84f39ad"
+    },
+    {
+      "path": "assets\\images\\kapruka\\08_rice_prioritisation.png",
+      "size": 1345215,
+      "sha256": "65446932f9a470d72003e40eb88750dc55dd13bef83a48ed6c57d21175ba654f"
+    },
+    {
+      "path": "assets\\images\\kapruka\\09_solution_overview.png",
+      "size": 1377254,
+      "sha256": "99c66b6d4ce50f3e04f67c9b6023d2da0262078d75083ded8ae344c8e2197b95"
+    },
+    {
+      "path": "assets\\images\\kapruka\\10_UML_Activity.png",
+      "size": 2111405,
+      "sha256": "f82a7880a822a49f2e527def08d237b6d4cfd218003a6bd4c151c4ed174f398e"
+    },
+    {
+      "path": "assets\\images\\kapruka\\11_High_Fidelity_Sceens.png",
+      "size": 3544757,
+      "sha256": "3944163c3d228ab80705d298c95ec6806a011b907a81fbfad5b23d171806a758"
+    },
+    {
+      "path": "assets\\images\\kapruka\\12_Conclusion.png",
+      "size": 1213671,
+      "sha256": "a0abeef9314457fe7ffe8528378b7813e0847bd56ccd5ddf24dbfccdfb098dc5"
+    },
+    {
+      "path": "assets\\images\\kapruka\\13_FinalCoverPage.png",
+      "size": 2217175,
+      "sha256": "ad589f62b805811e11d81355bd359c0dcd9684a5108b41f9680aa9e006464cde"
+    },
+    {
+      "path": "assets\\images\\Me.jpeg",
+      "size": 160024,
+      "sha256": "ec0013f7dc0bfa87e36d22d2a3e90a79ccbbfdfcbc310f0a0426e79943245bd7"
+    },
+    {
+      "path": "assets\\images\\Notion.png",
+      "size": 55022,
+      "sha256": "46f51e5837fa079c2655020d31b01d475a9f9fc467521b49d219935f9d1aecf3"
+    },
+    {
+      "path": "assets\\images\\Persona.png",
+      "size": 1349717,
+      "sha256": "50317500fe0798f63e53f9cf9aab7b0b904331004fc5fe0c996fecdde1c7d6af"
+    },
+    {
+      "path": "assets\\images\\Prioritization.png",
+      "size": 1283398,
+      "sha256": "3ea8c4fd621aa38810d60623435a821bdd0f0f50c553640cb486e93d4a2886ec"
+    },
+    {
+      "path": "assets\\images\\PSY.jpeg",
+      "size": 111602,
+      "sha256": "1c1b959ac16518dec1b3dad59a5b314249f9290bbb75678c769090d6874c645b"
+    },
+    {
+      "path": "assets\\images\\PUBLIC.jpg",
+      "size": 67759,
+      "sha256": "3aebab72d42dd16fe31e0d923af15f934772b8d1ef9a0ca308e985eb805e782e"
+    },
+    {
+      "path": "assets\\images\\revenue.png",
+      "size": 504225,
+      "sha256": "c7ea97596ee2f214d139c7f660cb3c89fc6c3e54d63745459cb4e14e55ca3e81"
+    },
+    {
+      "path": "assets\\images\\seatsSelection.png",
+      "size": 981569,
+      "sha256": "b6f6b287f932d7c5424d68f86831a11254730aabb8ef124a064475d238a489b5"
+    },
+    {
+      "path": "assets\\images\\Sentiva.png",
+      "size": 34430,
+      "sha256": "23b57202fe7c1ec176d4bea3f2d95317ed830c05827daafe750c8e70595fc10e"
+    },
+    {
+      "path": "assets\\images\\Software.png",
+      "size": 1803184,
+      "sha256": "48f9bc85673f09a227b525e40748f97d02c46fb9a2fda48983c9c88f8914fcbe"
+    },
+    {
+      "path": "assets\\images\\Stakeholder.png",
+      "size": 1521481,
+      "sha256": "aee647c5b3c6af3bcd9d4a09922de986423be1a4e74460fcf7958cd32054c2a5"
+    },
+    {
+      "path": "assets\\images\\Surge.jpg",
+      "size": 9194,
+      "sha256": "a907fe9ce7e883c29c3345c128898c528cfc09736bb7203c9238b0a257b219c9"
+    },
+    {
+      "path": "assets\\images\\Survey.png",
+      "size": 158321,
+      "sha256": "a4ffedc50e5ba3b161382e460c4abed596f0bf7e3e67fc5b831faec344a0e4a4"
+    },
+    {
+      "path": "assets\\images\\testing.png",
+      "size": 47233,
+      "sha256": "cbb249ee414f53279f4b2dda346e719b6ab9c0f69f7ae6bc9b287c697c2ec5fc"
+    },
+    {
+      "path": "assets\\images\\TV1.jpeg",
+      "size": 173919,
+      "sha256": "9b80a28061b2701d44942089f64b9b46a6caf2cd6ae4a92c334f8e197e29f875"
+    },
+    {
+      "path": "assets\\images\\TV2.jpeg",
+      "size": 138691,
+      "sha256": "20e5d21c5ed727ef07176e6438d285d6dededd342d7a94a7e7dd1b9033d22c16"
+    },
+    {
+      "path": "assets\\images\\TV3.jpeg",
+      "size": 77445,
+      "sha256": "9017a6edf1f0714aa6889430f61ce0e740b13448c65d6ccd285c12122dae9949"
+    },
+    {
+      "path": "assets\\images\\UIUX.png",
+      "size": 173320,
+      "sha256": "0ec32c6c3369bc821bfa20ffc8e67af1d4c3549135477333ff7ca0431968c337"
+    },
+    {
+      "path": "assets\\PDFS\\CV_PM.pdf",
+      "size": 369752,
+      "sha256": "477e29423c3c028e906481a7b80d3527e2a2200097a3c7454223c4b190f0f4ce"
+    },
+    {
+      "path": "assets\\Videos\\SISRSAVEDIO.mp4",
+      "size": 12166470,
+      "sha256": "c8b7c5558da4ebb9b7bd04398525de03e30f25c0de2504906a2f2f9896a83082"
+    }
+  ]
+}

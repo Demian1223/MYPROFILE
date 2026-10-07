@@ -3,7 +3,6 @@
   Premium Design System
   ============================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&display=swap');
 
 /* ── CSS Variables ── */
 :root {
@@ -62,7 +61,7 @@ body {
 }
 
 /* ── NAV ── */
-nav {
+.site-nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -75,7 +74,7 @@ nav {
   transition: background 0.4s, backdrop-filter 0.4s;
 }
 
-nav.scrolled {
+.site-nav.scrolled {
   background: rgba(6, 16, 43, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -371,10 +370,7 @@ nav.scrolled {
   background: linear-gradient(to right, transparent, rgba(79, 125, 247, 0.3), transparent);
 }
 
-.bts-thumb:hover {
-  filter: brightness(1) grayscale(0);
-  transform: scale(1.03);
-}
+
 
 .tv-grid {
   max-width: 1240px;
@@ -1259,8 +1255,8 @@ footer {
 
 /* ── SCROLL REVEAL ── */
 .reveal {
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
+  transform: none;
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
@@ -2192,7 +2188,7 @@ footer {
 }
 
 @media (max-width: 992px) {
-  nav {
+  .site-nav {
     padding: 1rem 1.5rem;
   }
 
@@ -2278,7 +2274,7 @@ footer {
     width: 100%;
   }
 
-  nav {
+  .site-nav {
     flex-direction: column;
     padding: 1.25rem 1rem;
   }
@@ -2305,7 +2301,8 @@ footer {
   }
 
   .project-stats-strip-inner {
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .cs-section {
@@ -2380,4 +2377,52 @@ footer {
   .media-grid .media-card {
     grid-column: 1;
   }
+}
+/* Foundation fixes: preserve the existing design and normal document flow. */
+:root { --header-offset: 6rem; }
+html { scroll-padding-top: var(--header-offset); }
+.site-nav .nav-links { min-width: 0; }
+.nav-links a { display: inline-block; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+[role="button"] { cursor: pointer; }
+.cert-img-wrap { max-width: 100%; }
+.cert-img-wrap img { max-width: 100%; height: auto; max-height: 380px; }
+.project-stat-cell { min-width: 0; }
+.cs-two-col > *, .project-row > *, .phase-entry > * { min-width: 0; }
+.closing-email { overflow-wrap: anywhere; }
+.reveal-enter { animation: reveal-entry 0.7s ease both; }
+.reveal-delay-1.reveal-enter { animation-delay: 0.1s; }
+.reveal-delay-2.reveal-enter { animation-delay: 0.2s; }
+.reveal-delay-3.reveal-enter { animation-delay: 0.3s; }
+.reveal-delay-4.reveal-enter { animation-delay: 0.4s; }
+@keyframes reveal-entry {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: none; }
+}
+@media (max-width: 992px) {
+  .cs-two-col { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  :root { --header-offset: 11rem; }
+  .site-nav { padding: 0.75rem 1rem; gap: 0.5rem; }
+  .site-nav .nav-links { margin-top: 0; gap: 0.35rem 0.75rem; }
+  .site-nav .nav-links a { padding-top: 0.35rem; padding-bottom: 0.35rem; }
+  .site-nav .nav-cta { padding: 0.45rem 0.75rem; }
+  #hero, .project-hero, .projects-page-hero { padding-top: calc(var(--header-offset) + 1rem); }
+  .project-row-num { font-size: 4.5rem; }
+  .project-row-tags { gap: 0.5rem; }
+  .project-problem-statement { padding: 2rem 1rem; }
+  .project-problem-statement blockquote { padding: 1.5rem; }
+  .case-study-content { padding: 3rem 1rem; }
+  .cs-callout { padding: 1.5rem; }
+  .cs-pain-cards { grid-template-columns: minmax(0, 1fr); }
+  .screenshot-card { width: min(320px, 80vw); }
+  .pw-card-meta { align-items: flex-start; }
+  .btn-primary, .btn-ghost { display: inline-block; text-align: center; max-width: 100%; }
+  #closing > div > div { max-width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .reveal, .reveal-enter { opacity: 1 !important; transform: none !important; }
 }

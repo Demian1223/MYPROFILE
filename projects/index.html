@@ -24,7 +24,7 @@
     <!-- ═══════════════════════════════════════
        NAVIGATION
   ═══════════════════════════════════════ -->
-    <nav id="navbar">
+    <nav id="navbar" class="site-nav" aria-label="Main navigation">
         <a href="../index.html" class="nav-logo">Demian de Silva</a>
         <ul class="nav-links">
             <li><a href="../index.html#tv">TV</a></li>
@@ -118,7 +118,7 @@
 
                 <div class="project-row-visual">
                     <div class="project-row-img-wrap">
-                        <img src="../assets/images/home.png" alt="BusLink product screenshot">
+                        <img src="../assets/images/home.png" alt="BusLink product screenshot" loading="lazy" decoding="async" width="1917" height="841">
                     </div>
                 </div>
             </article>
@@ -127,7 +127,7 @@
             <article class="project-row reveal reveal-delay-1 reverse">
                 <div class="project-row-visual">
                     <div class="project-row-img-wrap">
-                        <img src="../assets/images/kapruka/01_cover.png" alt="Kapruka Closing the Loop Case Study">
+                        <img src="../assets/images/kapruka/01_cover.png" alt="Kapruka Closing the Loop Case Study" loading="lazy" decoding="async" width="795" height="1126">
                     </div>
                 </div>
 
@@ -171,12 +171,12 @@
        FOOTER
   ═══════════════════════════════════════ -->
     <footer>
-        <p>© 2025 Demian de Silva · <a href="../index.html" style="color:rgba(255,255,255,0.4); text-decoration:none;">←
+        <p>© 2026 Demian de Silva · <a href="../index.html" style="color:rgba(255,255,255,0.4); text-decoration:none;">←
                 Back to Portfolio</a></p>
     </footer>
 
     <!-- Lightbox (required by shared JS) -->
-    <div id="lightbox" onclick="handleLightboxClick(event)">
+    <div id="lightbox" role="dialog" aria-modal="true" aria-label="Expanded media" aria-hidden="true" tabindex="-1" onclick="handleLightboxClick(event)">
         <button id="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
         <img id="lightbox-img" src="" alt="Expanded view">
         <video id="lightbox-video" controls></video>

@@ -24,7 +24,7 @@
   <!-- ══════════════════════════════════════════
      NAVIGATION
 ══════════════════════════════════════════ -->
-  <nav id="navbar">
+  <nav id="navbar" class="site-nav" aria-label="Main navigation">
     <a href="#hero" class="nav-logo">Demian de Silva</a>
     <ul class="nav-links">
       <li><a href="#tv">TV</a></li>
@@ -40,7 +40,7 @@
      HERO
 ══════════════════════════════════════════ -->
   <section id="hero">
-    <img src="assets/images/Me.jpeg" alt="Demian de Silva" class="hero-avatar">
+    <img src="assets/images/Me.jpeg" alt="Demian de Silva" class="hero-avatar" loading="eager" decoding="async" width="1066" height="1280">
 
     <p class="hero-pre">Product &amp; Project Manager · Sri Lanka</p>
 
@@ -126,11 +126,11 @@
         <!-- BTS strip below text on desktop, below video on mobile -->
         <div class="bts-strip" style="margin-top:2rem;">
           <img src="assets/images/TV1.jpeg" alt="Behind the scenes 1" class="bts-thumb"
-            onclick="openLightbox('image','assets/images/TV1.jpeg')">
+            onclick="openLightbox('image','assets/images/TV1.jpeg')" loading="lazy" decoding="async" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open image: Behind the scenes 1" width="1280" height="960">
           <img src="assets/images/TV2.jpeg" alt="Behind the scenes 2" class="bts-thumb"
-            onclick="openLightbox('image','assets/images/TV2.jpeg')">
+            onclick="openLightbox('image','assets/images/TV2.jpeg')" loading="lazy" decoding="async" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open image: Behind the scenes 2" width="1280" height="960">
           <img src="assets/images/TV3.jpeg" alt="Behind the scenes 3" class="bts-thumb"
-            onclick="openLightbox('image','assets/images/TV3.jpeg')">
+            onclick="openLightbox('image','assets/images/TV3.jpeg')" loading="lazy" decoding="async" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open image: Behind the scenes 3" width="1280" height="960">
         </div>
       </div>
 
@@ -138,7 +138,7 @@
       <div class="reveal reveal-delay-2">
         <div class="tv-video-wrap">
           <span class="tv-badge">🔴 Sirasa TV</span>
-          <video id="tv-video" muted loop playsinline autoplay preload="auto" poster="assets/images/TV2.jpeg">
+          <video id="tv-video" muted loop playsinline controls preload="metadata" poster="assets/images/TV2.jpeg">
             <source src="assets/Videos/SISRSAVEDIO.mp4" type="video/mp4">
           </video>
         </div>
@@ -177,20 +177,20 @@
       </div>
 
       <div class="media-grid reveal reveal-delay-1">
-        <div class="media-card" onclick="openLightbox('image','assets/images/COMPASS1.jpeg')">
-          <img src="assets/images/COMPASS1.jpeg" alt="Career Compass panel 1">
+        <div class="media-card" onclick="openLightbox('image','assets/images/COMPASS1.jpeg')" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open image preview">
+          <img src="assets/images/COMPASS1.jpeg" alt="Career Compass panel 1" loading="lazy" decoding="async" width="1290" height="947">
           <div class="media-card-overlay">
             <p>On stage - Career Compass</p>
           </div>
         </div>
-        <div class="media-card" onclick="openLightbox('image','assets/images/COMPASS2.jpeg')">
-          <img src="assets/images/COMPASS2.jpeg" alt="Career Compass panel 2">
+        <div class="media-card" onclick="openLightbox('image','assets/images/COMPASS2.jpeg')" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open image preview">
+          <img src="assets/images/COMPASS2.jpeg" alt="Career Compass panel 2" loading="lazy" decoding="async" width="1278" height="935">
           <div class="media-card-overlay">
             <p>Panel with industry leaders</p>
           </div>
         </div>
-        <div class="media-card" onclick="openLightbox('image','assets/images/COMPASS3.jpeg')">
-          <img src="assets/images/COMPASS3.jpeg" alt="Career Compass panel 3">
+        <div class="media-card" onclick="openLightbox('image','assets/images/COMPASS3.jpeg')" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open image preview">
+          <img src="assets/images/COMPASS3.jpeg" alt="Career Compass panel 3" loading="lazy" decoding="async" width="1290" height="951">
           <div class="media-card-overlay">
             <p>Sharing career insights</p>
           </div>
@@ -226,29 +226,29 @@
         <div class="marquee-outer dark">
           <div class="marquee-track">
             <!-- Set 1 -->
-            <div class="company-logo-item"><img src="assets/images/Altrium.png" alt="Altrium"></div>
-            <div class="company-logo-item"><img src="assets/images/Sentiva.png" alt="Sentiva"></div>
-            <div class="company-logo-item"><img src="assets/images/99X.jpg" alt="99X"></div>
-            <div class="company-logo-item"><img src="assets/images/Surge.jpg" alt="Surge Global"></div>
-            <div class="company-logo-item"><img src="assets/images/Abans.jpg" alt="Abans Finance"></div>
+            <div class="company-logo-item"><img src="assets/images/Altrium.png" alt="Altrium" loading="lazy" decoding="async" width="259" height="194"></div>
+            <div class="company-logo-item"><img src="assets/images/Sentiva.png" alt="Sentiva" loading="lazy" decoding="async" width="310" height="187"></div>
+            <div class="company-logo-item"><img src="assets/images/99X.jpg" alt="99X" loading="lazy" decoding="async" width="447" height="447"></div>
+            <div class="company-logo-item"><img src="assets/images/Surge.jpg" alt="Surge Global" loading="lazy" decoding="async" width="447" height="447"></div>
+            <div class="company-logo-item"><img src="assets/images/Abans.jpg" alt="Abans Finance" loading="lazy" decoding="async" width="447" height="447"></div>
             <!-- Set 2 -->
-            <div class="company-logo-item"><img src="assets/images/Altrium.png" alt="Altrium"></div>
-            <div class="company-logo-item"><img src="assets/images/Sentiva.png" alt="Sentiva"></div>
-            <div class="company-logo-item"><img src="assets/images/99X.jpg" alt="99X"></div>
-            <div class="company-logo-item"><img src="assets/images/Surge.jpg" alt="Surge Global"></div>
-            <div class="company-logo-item"><img src="assets/images/Abans.jpg" alt="Abans Finance"></div>
+            <div class="company-logo-item"><img src="assets/images/Altrium.png" alt="Altrium" loading="lazy" decoding="async" width="259" height="194"></div>
+            <div class="company-logo-item"><img src="assets/images/Sentiva.png" alt="Sentiva" loading="lazy" decoding="async" width="310" height="187"></div>
+            <div class="company-logo-item"><img src="assets/images/99X.jpg" alt="99X" loading="lazy" decoding="async" width="447" height="447"></div>
+            <div class="company-logo-item"><img src="assets/images/Surge.jpg" alt="Surge Global" loading="lazy" decoding="async" width="447" height="447"></div>
+            <div class="company-logo-item"><img src="assets/images/Abans.jpg" alt="Abans Finance" loading="lazy" decoding="async" width="447" height="447"></div>
             <!-- Set 3 -->
-            <div class="company-logo-item"><img src="assets/images/Altrium.png" alt="Altrium"></div>
-            <div class="company-logo-item"><img src="assets/images/Sentiva.png" alt="Sentiva"></div>
-            <div class="company-logo-item"><img src="assets/images/99X.jpg" alt="99X"></div>
-            <div class="company-logo-item"><img src="assets/images/Surge.jpg" alt="Surge Global"></div>
-            <div class="company-logo-item"><img src="assets/images/Abans.jpg" alt="Abans Finance"></div>
+            <div class="company-logo-item"><img src="assets/images/Altrium.png" alt="Altrium" loading="lazy" decoding="async" width="259" height="194"></div>
+            <div class="company-logo-item"><img src="assets/images/Sentiva.png" alt="Sentiva" loading="lazy" decoding="async" width="310" height="187"></div>
+            <div class="company-logo-item"><img src="assets/images/99X.jpg" alt="99X" loading="lazy" decoding="async" width="447" height="447"></div>
+            <div class="company-logo-item"><img src="assets/images/Surge.jpg" alt="Surge Global" loading="lazy" decoding="async" width="447" height="447"></div>
+            <div class="company-logo-item"><img src="assets/images/Abans.jpg" alt="Abans Finance" loading="lazy" decoding="async" width="447" height="447"></div>
             <!-- Set 4 - mirror of sets 1-3, animation goes to -50% and resets invisibly -->
-            <div class="company-logo-item"><img src="assets/images/Altrium.png" alt="Altrium"></div>
-            <div class="company-logo-item"><img src="assets/images/Sentiva.png" alt="Sentiva"></div>
-            <div class="company-logo-item"><img src="assets/images/99X.jpg" alt="99X"></div>
-            <div class="company-logo-item"><img src="assets/images/Surge.jpg" alt="Surge Global"></div>
-            <div class="company-logo-item"><img src="assets/images/Abans.jpg" alt="Abans Finance"></div>
+            <div class="company-logo-item"><img src="assets/images/Altrium.png" alt="Altrium" loading="lazy" decoding="async" width="259" height="194"></div>
+            <div class="company-logo-item"><img src="assets/images/Sentiva.png" alt="Sentiva" loading="lazy" decoding="async" width="310" height="187"></div>
+            <div class="company-logo-item"><img src="assets/images/99X.jpg" alt="99X" loading="lazy" decoding="async" width="447" height="447"></div>
+            <div class="company-logo-item"><img src="assets/images/Surge.jpg" alt="Surge Global" loading="lazy" decoding="async" width="447" height="447"></div>
+            <div class="company-logo-item"><img src="assets/images/Abans.jpg" alt="Abans Finance" loading="lazy" decoding="async" width="447" height="447"></div>
           </div>
         </div>
       </div>
@@ -374,11 +374,11 @@
       <!-- TWO MAJOR IMAGES -->
       <div class="major-cards reveal reveal-delay-1">
         <div class="major-card">
-          <img src="assets/images/Software.png" alt="Software Engineering">
+          <img src="assets/images/Software.png" alt="Software Engineering" loading="lazy" decoding="async" width="1254" height="1254">
           <div class="major-card-title">Software Engineering</div>
         </div>
         <div class="major-card">
-          <img src="assets/images/Business.png" alt="Business Management">
+          <img src="assets/images/Business.png" alt="Business Management" loading="lazy" decoding="async" width="1254" height="1254">
           <div class="major-card-title">Business Management</div>
         </div>
       </div>
@@ -406,12 +406,12 @@
 
       <div class="uni-cards reveal reveal-delay-1">
         <div class="uni-card">
-          <img src="assets/images/APIIT.jpg" alt="APIIT">
+          <img src="assets/images/APIIT.jpg" alt="APIIT" loading="lazy" decoding="async" width="900" height="900">
           <div class="uni-card-title">APIIT Sri Lanka</div>
           <div class="uni-card-sub">Batch Representative</div>
         </div>
         <div class="uni-card">
-          <img src="assets/images/ESOFT.jpg" alt="ESOFT">
+          <img src="assets/images/ESOFT.jpg" alt="ESOFT" loading="lazy" decoding="async" width="900" height="900">
           <div class="uni-card-title">ESOFT Metro Campus</div>
           <div class="uni-card-sub">Batch Representative</div>
         </div>
@@ -458,7 +458,7 @@
       </p>
 
       <div class="cert-img-wrap reveal reveal-delay-2">
-        <img src="assets/images/PSY.jpeg" alt="Psychology certification">
+        <img src="assets/images/PSY.jpeg" alt="Psychology certification" loading="lazy" decoding="async" width="1122" height="1600">
       </div>
 
     </div>
@@ -469,7 +469,7 @@
 ══════════════════════════════════════════ -->
   <section id="compere">
     <div class="compere-inner reveal">
-      <img src="assets/images/PUBLIC.jpg" alt="Best Compere award" class="compere-award-img">
+      <img src="assets/images/PUBLIC.jpg" alt="Best Compere award" class="compere-award-img" loading="lazy" decoding="async" width="800" height="532">
       <div>
         <p
           style="font-size:0.7rem; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:var(--accent); margin-bottom:0.6rem; display:flex; align-items:center; gap:8px;">
@@ -522,13 +522,13 @@
      FOOTER
 ══════════════════════════════════════════ -->
   <footer>
-    <p>© 2025 Demian de Silva · Built to prove a point.</p>
+    <p>© 2026 Demian de Silva · Built to prove a point.</p>
   </footer>
 
   <!-- ══════════════════════════════════════════
      LIGHTBOX
 ══════════════════════════════════════════ -->
-  <div id="lightbox" onclick="handleLightboxClick(event)">
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Expanded media" aria-hidden="true" tabindex="-1" onclick="handleLightboxClick(event)">
     <button id="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
     <img id="lightbox-img" src="" alt="Expanded view">
     <video id="lightbox-video" controls></video>

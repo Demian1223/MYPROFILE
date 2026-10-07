@@ -1,185 +1,203 @@
-/* =============================================
-  DEMIAN DE SILVA  PORTFOLIO
-  script.js  All interactive behavior
-   ============================================= */
+﻿/* Shared portfolio behaviour. Content is usable before enhancement. */
+const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+const supportsObserver = 'IntersectionObserver' in window;
 
-// ── ROTATING TAGLINE ──
-const taglines = ["Product Thinker", "Problem Solver", "Storyteller", "Researcher", "Builder", "Communicator", "Visionary"];
-let tagIdx = 0;
-const tagEl = document.getElementById("tagline");
+// Keep anchor offsets in sync with the wrapping header height.
+const navbar = document.getElementById('navbar');
+function updateHeader() {
+  if (!navbar) return;
+  navbar.classList.toggle('scrolled', window.scrollY > 60);
+  document.documentElement.style.setProperty('--header-offset', `${navbar.getBoundingClientRect().height + 16}px`);
+}
+updateHeader();
+window.addEventListener('scroll', () => navbar?.classList.toggle('scrolled', window.scrollY > 60), { passive: true });
+window.addEventListener('resize', updateHeader, { passive: true });
+if (navbar && 'ResizeObserver' in window) new ResizeObserver(updateHeader).observe(navbar);
+if (document.fonts) document.fonts.ready.then(updateHeader);
 
-if (tagEl) {
-  setInterval(() => {
-    tagEl.style.opacity = 0;
-    setTimeout(() => {
-      tagIdx = (tagIdx + 1) % taglines.length;
-      tagEl.textContent = taglines[tagIdx];
-      tagEl.style.opacity = 1;
+const taglines = ['Product Thinker', 'Problem Solver', 'Storyteller', 'Researcher', 'Builder', 'Communicator', 'Visionary'];
+const tagEl = document.getElementById('tagline');
+const originalTagline = tagEl?.textContent;
+let tagIndex = 0;
+let taglineInterval;
+let taglineTimeout;
+function configureTagline() {
+  clearInterval(taglineInterval);
+  clearTimeout(taglineTimeout);
+  if (!tagEl) return;
+  tagEl.style.opacity = '1';
+  if (motionPreference.matches) {
+    tagEl.textContent = originalTagline;
+    return;
+  }
+  taglineInterval = setInterval(() => {
+    tagEl.style.opacity = '0';
+    taglineTimeout = setTimeout(() => {
+      if (motionPreference.matches) return;
+      tagEl.textContent = taglines[tagIndex++ % taglines.length];
+      tagEl.style.opacity = '1';
     }, 450);
   }, 2800);
 }
+configureTagline();
 
-// ── NAVBAR SCROLL EFFECT ──
-const navbar = document.getElementById("navbar");
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 60) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
-}, { passive: true });
-
-// ── SCROLL REVEAL ──
-const revealEls = document.querySelectorAll(".reveal");
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
+// Only animate when entering: no hidden content waiting for JavaScript.
+if (supportsObserver) {
+  const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
       revealObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
-
-revealEls.forEach(el => revealObserver.observe(el));
-
-// removed manual video pausing to allow continuous smooth native autoplay
-
-// ── LIGHTBOX ──
-function openLightbox(type, src) {
-  const box = document.getElementById("lightbox");
-  const img = document.getElementById("lightbox-img");
-  const vid = document.getElementById("lightbox-video");
-
-  box.classList.add("open");
-  document.body.style.overflow = "hidden";
-
-  if (type === "image") {
-    img.src = src;
-    img.style.display = "block";
-    vid.style.display = "none";
-    vid.pause();
-  } else if (type === "video") {
-    vid.src = src;
-    vid.style.display = "block";
-    img.style.display = "none";
-  }
-}
-
-function closeLightbox() {
-  const box = document.getElementById("lightbox");
-  const vid = document.getElementById("lightbox-video");
-  box.classList.remove("open");
-  document.body.style.overflow = "";
-  vid.pause();
-  vid.src = "";
-}
-
-function handleLightboxClick(e) {
-  // Close if clicking the dark backdrop (not the media itself)
-  if (e.target === document.getElementById("lightbox")) {
-    closeLightbox();
-  }
-}
-
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closeLightbox();
-});
-
-// ── SMOOTH SECTION SCROLL (nav links) ──
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", (e) => {
-    const target = document.querySelector(anchor.getAttribute("href"));
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  });
-});
-
-// ── ACHIEVEMENT NUMBERS COUNT-UP ON SCROLL ──
-function animateCountUp(el, targetStr) {
-  // Parse the target handle decimals and + signs
-  const isFloat = targetStr.includes(".");
-  const hasPlus = targetStr.includes("+");
-  const suffix = hasPlus ? "+" : (targetStr.includes("%") ? "%" : "");
-  const num = parseFloat(targetStr.replace(/[^0-9.]/g, ""));
-  const decimalPlaces = isFloat ? (targetStr.split(".")[1]?.replace(/[^0-9]/g, "").length || 0) : 0;
-
-  let start = 0;
-  const duration = 1400;
-  const startTime = performance.now();
-
-  function tick(now) {
-    const elapsed = now - startTime;
-    const progress = Math.min(elapsed / duration, 1);
-    // Ease out cubic
-    const eased = 1 - Math.pow(1 - progress, 3);
-    const current = eased * num;
-    const display = decimalPlaces > 0 ? current.toFixed(decimalPlaces) : Math.floor(current);
-    el.textContent = display + suffix;
-    if (progress < 1) requestAnimationFrame(tick);
-  }
-  requestAnimationFrame(tick);
-}
-
-const countEls = document.querySelectorAll(".achievement-num");
-const countObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const el = entry.target;
-      // Grab original text from DOM
-      const raw = el.getAttribute("data-target");
-      if (raw) animateCountUp(el.querySelector(".num-inner") || el, raw);
-      countObserver.unobserve(el);
-    }
-  });
-}, { threshold: 0.5 });
-
-// Set data-target from text content and wrap number
-countEls.forEach(el => {
-  // Find the accent span child
-  const accent = el.querySelector(".accent");
-  const rawNum = el.textContent.replace(accent?.textContent || "", "").trim();
-  const suffix = accent ? accent.textContent : "";
-
-  el.setAttribute("data-target", el.textContent.trim());
-  // Start at 0
-  const numPart = el.textContent.replace(suffix, "").trim();
-  el.innerHTML = `<span class="num-inner">0</span><span class="accent">${suffix}</span>`;
-  el.setAttribute("data-value", numPart);
-  countObserver.observe(el);
-});
-
-// Override with cleaner count-up that uses data-value
-const countObserver2 = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const el = entry.target;
-      const target = parseFloat(el.getAttribute("data-value") || "0");
-      const inner = el.querySelector(".num-inner");
-      const isFloat = !Number.isInteger(target);
-      const decPlaces = isFloat ? (String(el.getAttribute("data-value")).split(".")[1]?.length || 2) : 0;
-
-      let startTime = null;
-      const duration = 1600;
-      function step(ts) {
-        if (!startTime) startTime = ts;
-        const elapsed = ts - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        const eased = 1 - Math.pow(1 - progress, 3);
-        const val = eased * target;
-        if (inner) inner.textContent = decPlaces > 0 ? val.toFixed(decPlaces) : Math.floor(val);
-        if (progress < 1) requestAnimationFrame(step);
+      if (!motionPreference.matches) {
+        entry.target.classList.add('reveal-enter');
+        setTimeout(() => entry.target.classList.remove('reveal-enter'), 1200);
       }
-      requestAnimationFrame(step);
-      countObserver2.unobserve(el);
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+}
+
+// One counter implementation; preserve the existing suffix/accent exactly.
+const runningCounters = new Map();
+function finishCounters() {
+  runningCounters.forEach((counter, el) => {
+    cancelAnimationFrame(counter.frame);
+    counter.inner.textContent = counter.original;
+    runningCounters.delete(el);
+  });
+}
+function animateCounter(el) {
+  if (motionPreference.matches || el.dataset.counted) return;
+  el.dataset.counted = 'true';
+  const numberNode = Array.from(el.childNodes).find(node => node.nodeType === Node.TEXT_NODE && /\d/.test(node.textContent));
+  if (!numberNode) return;
+  const original = numberNode.textContent.trim();
+  const target = Number(original);
+  if (!Number.isFinite(target)) return;
+  const decimals = original.includes('.') ? original.split('.')[1].length : 0;
+  const inner = document.createElement('span');
+  inner.className = 'num-inner';
+  inner.textContent = original;
+  numberNode.replaceWith(inner);
+  const counter = { inner, original, frame: 0 };
+  runningCounters.set(el, counter);
+  let start;
+  function step(now) {
+    if (start === undefined) start = now;
+    const progress = Math.min((now - start) / 1600, 1);
+    const value = target * (1 - Math.pow(1 - progress, 3));
+    inner.textContent = progress === 1 ? original : (decimals ? value.toFixed(decimals) : String(Math.floor(value)));
+    if (progress < 1) counter.frame = requestAnimationFrame(step);
+    else runningCounters.delete(el);
+  }
+  counter.frame = requestAnimationFrame(step);
+}
+if (supportsObserver) {
+  const counterObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        counterObserver.unobserve(entry.target);
+        animateCounter(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.achievement-num').forEach(el => counterObserver.observe(el));
+}
+
+// Keyboard activation, focus trap, inert background and return focus.
+const lightbox = document.getElementById('lightbox');
+let previousFocus;
+let previousOverflow = '';
+const backgroundState = new Map();
+function openLightbox(type, src) {
+  if (!lightbox) return;
+  const img = document.getElementById('lightbox-img');
+  const video = document.getElementById('lightbox-video');
+  if (!lightbox.classList.contains('open')) {
+    previousFocus = document.activeElement;
+    previousOverflow = document.body.style.overflow;
+    Array.from(document.body.children).forEach(el => {
+      if (el === lightbox || el.tagName === 'SCRIPT') return;
+      backgroundState.set(el, el.inert);
+      el.inert = true;
+    });
+  }
+  video.pause();
+  if (type === 'image') {
+    img.src = src;
+    img.alt = previousFocus?.querySelector('img')?.alt || (previousFocus?.tagName === 'IMG' ? previousFocus.alt : 'Expanded image');
+    img.style.display = 'block';
+    video.style.display = 'none';
+  } else {
+    video.src = src;
+    video.style.display = 'block';
+    img.style.display = 'none';
+  }
+  lightbox.classList.add('open');
+  lightbox.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+  document.getElementById('lightbox-close').focus();
+}
+function closeLightbox() {
+  if (!lightbox?.classList.contains('open')) return;
+  const video = document.getElementById('lightbox-video');
+  video.pause();
+  video.removeAttribute('src');
+  lightbox.classList.remove('open');
+  lightbox.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = previousOverflow;
+  backgroundState.forEach((inert, el) => { el.inert = inert; });
+  backgroundState.clear();
+  if (previousFocus?.isConnected) previousFocus.focus({ preventScroll: true });
+}
+function handleLightboxClick(event) {
+  if (event.target === lightbox) closeLightbox();
+}
+document.querySelectorAll('[onclick*="openLightbox"]').forEach(trigger => {
+  trigger.addEventListener('click', () => trigger.focus({ preventScroll: true }), { capture: true });
+  trigger.addEventListener('keydown', event => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      trigger.click();
     }
   });
-}, { threshold: 0.5 });
+});
+document.addEventListener('keydown', event => {
+  if (!lightbox?.classList.contains('open')) return;
+  if (event.key === 'Escape') closeLightbox();
+  if (event.key === 'Tab') {
+    const focusable = Array.from(lightbox.querySelectorAll('button, video[controls], [tabindex="0"]')).filter(el => el.getClientRects().length);
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (event.shiftKey && (document.activeElement === first || !lightbox.contains(document.activeElement))) {
+      event.preventDefault(); last?.focus();
+    } else if (!event.shiftKey && (document.activeElement === last || !lightbox.contains(document.activeElement))) {
+      event.preventDefault(); first?.focus();
+    }
+  }
+});
 
-// Re-query after DOM mutation above
-setTimeout(() => {
-  document.querySelectorAll(".achievement-num[data-value]").forEach(el => {
-    countObserver2.observe(el);
-  });
-}, 100);
+// Native anchors preserve URLs/history and honour CSS scroll offsets.
+const tvVideo = document.getElementById('tv-video');
+let videoVisible = false;
+function updateVideo() {
+  if (!tvVideo) return;
+  if (videoVisible && !document.hidden && !motionPreference.matches) {
+    const play = tvVideo.play();
+    if (play?.catch) play.catch(() => { tvVideo.controls = true; });
+  } else tvVideo.pause();
+}
+if (tvVideo) {
+  tvVideo.autoplay = false;
+  if (supportsObserver) {
+    new IntersectionObserver(entries => {
+      videoVisible = entries[0].isIntersecting;
+      updateVideo();
+    }, { threshold: 0.1 }).observe(tvVideo);
+  }
+  document.addEventListener('visibilitychange', updateVideo);
+}
+motionPreference.addEventListener('change', () => {
+  configureTagline();
+  if (motionPreference.matches) finishCounters();
+  updateVideo();
+});
