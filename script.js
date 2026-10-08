@@ -1,4 +1,4 @@
-﻿/* Shared portfolio behaviour. Content is usable before enhancement. */
+/* Shared portfolio behaviour. Content is usable before enhancement. */
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
 const supportsObserver = 'IntersectionObserver' in window;
 
@@ -15,29 +15,10 @@ window.addEventListener('resize', updateHeader, { passive: true });
 if (navbar && 'ResizeObserver' in window) new ResizeObserver(updateHeader).observe(navbar);
 if (document.fonts) document.fonts.ready.then(updateHeader);
 
-const taglines = ['Product Thinker', 'Problem Solver', 'Storyteller', 'Researcher', 'Builder', 'Communicator', 'Visionary'];
 const tagEl = document.getElementById('tagline');
-const originalTagline = tagEl?.textContent;
-let tagIndex = 0;
-let taglineInterval;
-let taglineTimeout;
 function configureTagline() {
-  clearInterval(taglineInterval);
-  clearTimeout(taglineTimeout);
   if (!tagEl) return;
   tagEl.style.opacity = '1';
-  if (motionPreference.matches) {
-    tagEl.textContent = originalTagline;
-    return;
-  }
-  taglineInterval = setInterval(() => {
-    tagEl.style.opacity = '0';
-    taglineTimeout = setTimeout(() => {
-      if (motionPreference.matches) return;
-      tagEl.textContent = taglines[tagIndex++ % taglines.length];
-      tagEl.style.opacity = '1';
-    }, 450);
-  }, 2800);
 }
 configureTagline();
 

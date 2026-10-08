@@ -4,7 +4,7 @@
   ============================================= */
 
 
-/* ── CSS Variables ── */
+/* â”€â”€ CSS Variables â”€â”€ */
 :root {
   --navy: #06102b;
   --navy-mid: #0d1f4a;
@@ -18,7 +18,7 @@
   --glass: rgba(255, 255, 255, 0.04);
 }
 
-/* ── Reset & Base ── */
+/* â”€â”€ Reset & Base â”€â”€ */
 *,
 *::before,
 *::after {
@@ -39,7 +39,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ── Utility: Section Label ── */
+/* â”€â”€ Utility: Section Label â”€â”€ */
 .section-label {
   display: inline-flex;
   align-items: center;
@@ -60,7 +60,7 @@ body {
   background: var(--accent);
 }
 
-/* ── NAV ── */
+/* â”€â”€ NAV â”€â”€ */
 .site-nav {
   position: fixed;
   top: 0;
@@ -124,7 +124,7 @@ body {
   border-color: white !important;
 }
 
-/* ── HERO ── */
+/* â”€â”€ HERO â”€â”€ */
 #hero {
   min-height: 100vh;
   background: var(--navy);
@@ -294,7 +294,7 @@ body {
   }
 }
 
-/* ── MARQUEE ── */
+/* â”€â”€ MARQUEE â”€â”€ */
 .marquee-outer {
   overflow: hidden;
   position: relative;
@@ -352,7 +352,7 @@ body {
   }
 }
 
-/* ── SECTION: TV DEBUT ── */
+/* â”€â”€ SECTION: TV DEBUT â”€â”€ */
 #tv {
   background: var(--navy);
   padding: 6rem 2rem;
@@ -474,7 +474,7 @@ body {
   transform: scale(1.03);
 }
 
-/* ── SECTION: ACHIEVEMENT WALL ── */
+/* â”€â”€ SECTION: ACHIEVEMENT WALL â”€â”€ */
 #achievement-wall {
   background: var(--navy);
   padding: 4rem 2rem;
@@ -525,7 +525,7 @@ body {
   margin: 0 auto;
 }
 
-/* ── SECTION: MEDIA / CAREER COMPASS ── */
+/* â”€â”€ SECTION: MEDIA / CAREER COMPASS â”€â”€ */
 #media {
   background: var(--off-white);
   padding: 6rem 2rem;
@@ -619,7 +619,7 @@ body {
   font-weight: 500;
 }
 
-/* ── COMPANY MARQUEE BAND ── */
+/* â”€â”€ COMPANY MARQUEE BAND â”€â”€ */
 .company-band {
   background: var(--navy);
   padding: 1.5rem 0;
@@ -646,7 +646,7 @@ body {
   opacity: 0.85;
 }
 
-/* ── SECTION: BUSLINK ── */
+/* â”€â”€ SECTION: BUSLINK â”€â”€ */
 #buslink {
   background: white;
   padding: 6rem 2rem;
@@ -806,7 +806,7 @@ body {
   line-height: 1.3;
 }
 
-/* ── SECTION: JOURNEY ── */
+/* â”€â”€ SECTION: JOURNEY â”€â”€ */
 #journey {
   background: var(--off-white);
   padding: 6rem 2rem;
@@ -874,7 +874,7 @@ body {
   font-size: 0.95rem;
 }
 
-/* ── SECTION: BATCH REP ── */
+/* â”€â”€ SECTION: BATCH REP â”€â”€ */
 #batchrep {
   background: white;
   padding: 6rem 2rem;
@@ -962,7 +962,7 @@ body {
   border-color: var(--navy);
 }
 
-/* ── SECTION: PSYCHOLOGY ── */
+/* â”€â”€ SECTION: PSYCHOLOGY â”€â”€ */
 #psychology {
   background: var(--navy);
   padding: 6rem 2rem;
@@ -1030,7 +1030,7 @@ body {
   background: white;
 }
 
-/* ── SECTION: COMPERE ── */
+/* â”€â”€ SECTION: COMPERE â”€â”€ */
 #compere {
   background: white;
   padding: 5rem 2rem;
@@ -1084,7 +1084,7 @@ body {
   line-height: 1.75;
 }
 
-/* ── SECTION: CLOSING CTA ── */
+/* â”€â”€ SECTION: CLOSING CTA â”€â”€ */
 #closing {
   background: var(--navy);
   padding: 8rem 2rem;
@@ -1138,7 +1138,7 @@ body {
   text-decoration: none;
 }
 
-/* ── FOOTER ── */
+/* â”€â”€ FOOTER â”€â”€ */
 footer {
   background: #06102b;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -1148,7 +1148,7 @@ footer {
   font-size: 0.78rem;
 }
 
-/* ── LIGHTBOX ── */
+/* â”€â”€ LIGHTBOX â”€â”€ */
 #lightbox {
   position: fixed;
   inset: 0;
@@ -1195,7 +1195,7 @@ footer {
   object-fit: contain;
 }
 
-/* ── Project Management section & badges ── */
+/* â”€â”€ Project Management section & badges â”€â”€ */
 .pm-section {
   background: #f8fafc;
   padding: 3.5rem 2rem;
@@ -1253,7 +1253,7 @@ footer {
   display: none;
 }
 
-/* ── SCROLL REVEAL ── */
+/* â”€â”€ SCROLL REVEAL â”€â”€ */
 .reveal {
   opacity: 1;
   transform: none;
@@ -1281,7 +1281,7 @@ footer {
   transition-delay: 0.4s;
 }
 
-/* ── HORIZONTAL RULE ACCENT ── */
+/* â”€â”€ HORIZONTAL RULE ACCENT â”€â”€ */
 .hr-accent {
   border: none;
   height: 1px;
@@ -1289,9 +1289,9 @@ footer {
   margin: 0;
 }
 
-/* ══════════════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
   SELECTED PRODUCT WORK  Homepage Preview
-══════════════════════════════════════════ */
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 #product-work {
   background: white;
   padding: 6rem 2rem;
@@ -1460,9 +1460,9 @@ footer {
   border-top: 1px solid #f0f0f0;
 }
 
-/* ══════════════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    PROJECTS INDEX PAGE
-══════════════════════════════════════════ */
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 .projects-page-hero {
   background: var(--navy);
   padding: 10rem 2rem 6rem;
@@ -1665,9 +1665,9 @@ footer {
   transform: scale(1.04);
 }
 
-/* ══════════════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    SHARED PROJECT CASE STUDY PAGE STYLES
-══════════════════════════════════════════ */
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 
 /* Project hero */
 .project-hero {
@@ -2175,7 +2175,7 @@ footer {
   color: white;
 }
 
-/* ── RESPONSIVE & BREAKPOINTS ── */
+/* â”€â”€ RESPONSIVE & BREAKPOINTS â”€â”€ */
 
 @media (max-width: 1200px) {
   .nav-links {
@@ -2425,4 +2425,149 @@ html { scroll-padding-top: var(--header-offset); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal, .reveal-enter { opacity: 1 !important; transform: none !important; }
+}
+
+/* Phase 2 content architecture; Phase 3 will replace the visual treatment. */
+.product-approach,
+.product-capabilities {
+  padding: 6rem 2rem;
+}
+
+.product-approach {
+  background: var(--off-white);
+}
+
+.approach-steps {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 2.5rem;
+  background: #e5e7eb;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.approach-step {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 1.4rem 1.5rem;
+  background: white;
+  color: var(--navy);
+}
+
+.approach-step span {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.product-case-context {
+  max-width: 680px;
+  margin: -0.35rem 0 1.25rem;
+  color: #6b7280;
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+
+.product-decision-flow {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1px;
+  margin: 1.5rem 0;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #e5e7eb;
+}
+
+.product-decision-flow div {
+  padding: 0.9rem;
+  background: white;
+}
+
+.product-decision-flow dt {
+  margin-bottom: 0.35rem;
+  color: var(--accent);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.product-decision-flow dd {
+  color: #4b5563;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.product-capabilities {
+  background: var(--navy);
+}
+
+.product-capabilities .product-work-title,
+.product-capabilities .capability-group h3 {
+  color: white;
+}
+
+.product-capabilities .product-work-sub,
+.capability-group p {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.capability-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 2.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.capability-group {
+  padding: 2rem;
+  background: var(--navy-mid);
+}
+
+.capability-group h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.capability-group p {
+  line-height: 1.75;
+  font-size: 0.9rem;
+}
+
+.capability-group a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.technology-business-equation {
+  margin: -1rem auto 2rem;
+  color: var(--navy);
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 768px) {
+  .product-approach,
+  .product-capabilities {
+    padding: 4rem 1.5rem;
+  }
+
+  .approach-steps,
+  .capability-groups,
+  .product-decision-flow {
+    grid-template-columns: 1fr;
+  }
 }
