@@ -11,6 +11,7 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/phase-3.css">
 </head>
 
 <body>
@@ -89,27 +90,39 @@
      FOOTER
 ══════════════════════════════════════════ -->
   <section id="hero" class="story-chapter hero-identity" data-scene="identity">
-    <img src="assets/images/Me.jpeg" alt="Demian de Silva" class="hero-avatar" loading="eager" decoding="async" width="1066" height="1280">
+    <div class="hero-shell">
+      <div class="hero-copy">
+        <p class="hero-pre hero-positioning">Product × Technology × Business</p>
 
-    <p class="hero-pre">Product × Technology × Business</p>
+        <h1 class="hero-name">
+          Demian<br>
+          <span>de Silva</span>
+        </h1>
 
-    <h1 class="hero-name">
-      Demian<br>
-      <span>de Silva</span>
-    </h1>
+        <div class="hero-tagline-wrap">
+          <div id="tagline">Product thinking grounded in users, evidence and delivery</div>
+        </div>
 
-    <div class="hero-tagline-wrap">
-      <div id="tagline">Product thinking grounded in users, evidence and delivery</div>
-    </div>
+        <p class="hero-statement">
+          I turn complex problems into useful product decisions by connecting user needs, business thinking and
+          technology—from discovery and prioritisation through delivery, validation and learning.
+        </p>
 
-    <p class="hero-statement">
-      I turn complex problems into useful product decisions by connecting user needs, business thinking and
-      technology—from discovery and prioritisation through delivery, validation and learning.
-    </p>
+        <div class="hero-ctas">
+          <a href="#product-work" class="btn-primary">View Product Work</a>
+          <a href="assets/PDFS/CV_PM.pdf" download="" class="btn-ghost">View CV</a>
+        </div>
+      </div>
 
-    <div class="hero-ctas">
-      <a href="#product-work" class="btn-primary">View Product Work</a>
-      <a href="assets/PDFS/CV_PM.pdf" download="" class="btn-ghost">View CV</a>
+      <div class="hero-visual" aria-hidden="true">
+        <div id="hero-3d-stage" class="hero-3d-stage" data-webgl-stage>
+          <span class="hero-stage-orbit hero-stage-orbit--one"></span>
+          <span class="hero-stage-orbit hero-stage-orbit--two"></span>
+          <span class="hero-stage-axis"></span>
+          <span class="hero-stage-label">Future WebGL stage</span>
+        </div>
+        <img src="assets/images/Me.jpeg" alt="" class="hero-avatar" loading="eager" decoding="async" width="1066" height="1280">
+      </div>
     </div>
 
     <div class="scroll-indicator">
@@ -152,6 +165,10 @@
 
       <!-- BusLink Preview -->
       <article class="pw-card product-chapter product-chapter--buslink reveal" data-product="buslink">
+        <figure class="product-chapter-visual product-chapter-visual--buslink">
+          <img src="assets/images/home.png" alt="BusLink reservation interface" loading="lazy" decoding="async" width="1899" height="1373">
+          <figcaption>BusLink product evidence · reservation experience</figcaption>
+        </figure>
         <div class="pw-card-body">
           <div class="pw-card-meta">
             <span class="pw-card-index">01</span>
@@ -196,6 +213,10 @@
 
       <!-- Kapruka Preview -->
       <article class="pw-card product-chapter product-chapter--kapruka reveal reveal-delay-1" data-product="kapruka">
+        <figure class="product-chapter-visual product-chapter-visual--kapruka">
+          <img src="assets/images/kapruka/01_cover.png" alt="Kapruka Closing the Loop case-study cover" loading="lazy" decoding="async" width="795" height="1126">
+          <figcaption>Kapruka service-improvement evidence · proposed resolution journey</figcaption>
+        </figure>
         <div class="pw-card-body">
           <div class="pw-card-meta">
             <span class="pw-card-index">02</span>
@@ -305,6 +326,22 @@
         <p class="technology-business-equation" aria-label="Technology multiplied by business leads to better product decisions">
           <strong>Technology</strong> × <strong>Business</strong> = <strong>Better Product Decisions</strong>
         </p>
+        <div class="technology-business-system" aria-label="Technology and business connected through product thinking">
+          <div class="foundation-pillar foundation-pillar--technology">
+            <span>01</span>
+            <h3>Technology</h3>
+            <p>Feasibility · Systems · Implementation · Technical trade-offs</p>
+          </div>
+          <div class="foundation-connector">
+            <span>Product</span>
+            <p>Connects what is useful, feasible and valuable.</p>
+          </div>
+          <div class="foundation-pillar foundation-pillar--business">
+            <span>02</span>
+            <h3>Business</h3>
+            <p>Value · Priorities · Customers · Commercial context</p>
+          </div>
+        </div>
         <p class="journey-body">
           I started as a Software Engineering undergraduate. Partway in, with my family's encouragement, I took on a
           second major, Business Management, alongside it. Coding deadlines and business assignments colliding in the
