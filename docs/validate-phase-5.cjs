@@ -8,13 +8,15 @@ const css = fs.readFileSync(path.join(root, 'styles/phase-3.css'), 'utf8');
 
 const chapters = [
   ['hero', 'identity', '01'],
-  ['approach', 'approach', '02'],
-  ['product-work', 'product-work', '03'],
-  ['achievement-wall', 'product-evidence', '04'],
-  ['capabilities', 'capabilities', '05'],
-  ['background', 'technology-business', '06'],
-  ['leadership', 'leadership', '07'],
-  ['closing', 'contact', '08']
+  ['tv', 'credibility', '02'],
+  ['approach', 'approach', '03'],
+  ['media', 'communication', '04'],
+  ['product-work', 'product-work', '05'],
+  ['achievement-wall', 'product-evidence', '06'],
+  ['capabilities', 'capabilities', '07'],
+  ['background', 'technology-business', '08'],
+  ['leadership', 'leadership', '09'],
+  ['closing', 'contact', '10']
 ];
 
 for (const [id, scene, number] of chapters) {

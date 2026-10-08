@@ -2,6 +2,19 @@
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
 const supportsObserver = 'IntersectionObserver' in window;
 
+// Put personal credibility before process detail while preserving a complete static fallback.
+function arrangeHomepageNarrative() {
+  const hero = document.getElementById('hero');
+  const tv = document.getElementById('tv');
+  const approach = document.getElementById('approach');
+  const media = document.getElementById('media');
+  if (!hero || !tv || !approach || !media) return;
+  hero.after(tv);
+  tv.after(approach);
+  approach.after(media);
+}
+arrangeHomepageNarrative();
+
 // Keep anchor offsets in sync with the wrapping header height.
 const navbar = document.getElementById('navbar');
 function updateHeader() {

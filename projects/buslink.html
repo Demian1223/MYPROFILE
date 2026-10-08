@@ -7,6 +7,10 @@
     <title>BusLink Smart Bus Reservation System · Demian de Silva</title>
     <meta name="description"
         content="BusLink product case study: improving the intercity bus-booking experience through commuter research, prioritisation, delivery and system validation in a university capstone.">
+    <meta name="theme-color" content="#070a12"><meta property="og:type" content="article">
+    <meta property="og:title" content="BusLink Product Case Study · Demian de Silva"><meta property="og:description" content="A university capstone covering commuter research, product decisions, delivery and audited validation.">
+    <meta property="og:image" content="../assets/images/home.png"><meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="../assets/images/Me.jpeg" type="image/jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,9 +18,11 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../styles/phase-3.css">
+    <link rel="stylesheet" href="../styles/final.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#bus-overview">Skip to case study</a>
 
     <nav id="navbar" class="site-nav" aria-label="Main navigation">
         <a href="../index.html" class="nav-logo">Demian de Silva</a>
@@ -55,6 +61,10 @@
                     <div class="project-meta-cell">
                         <div class="project-meta-label">Focus</div>
                         <div class="project-meta-value">Public transport experience</div>
+                    </div>
+                    <div class="project-meta-cell">
+                        <div class="project-meta-label">Status</div>
+                        <div class="project-meta-value">Working, test-validated university capstone · Not commercially launched</div>
                     </div>
                     <div class="project-meta-cell">
                         <div class="project-meta-label">My Contribution</div>
@@ -107,10 +117,25 @@
         </div>
     </div>
 
+    <nav class="case-progress" aria-label="BusLink case-study chapters">
+        <ol>
+            <li><a href="#bus-overview">01 <span>Overview</span></a></li>
+            <li><a href="#bus-problem">02 <span>Problem</span></a></li>
+            <li><a href="#bus-research">03 <span>Research</span></a></li>
+            <li><a href="#bus-insights">04 <span>Insights</span></a></li>
+            <li><a href="#bus-decisions">05 <span>Decisions</span></a></li>
+            <li><a href="#bus-prioritisation">06 <span>Priority</span></a></li>
+            <li><a href="#bus-solution">07 <span>Solution</span></a></li>
+            <li><a href="#bus-delivery">08 <span>Delivery</span></a></li>
+            <li><a href="#bus-validation">09 <span>Validation</span></a></li>
+            <li><a href="#bus-learning">10 <span>Learning</span></a></li>
+        </ol>
+    </nav>
+
     <section class="case-study-content">
         <div class="case-study-inner">
 
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="bus-overview" data-case-chapter="01">
                 <div class="reveal">
                     <p class="cs-section-label">Background</p>
                     <h2 class="cs-section-title">A product process grounded in commuter evidence</h2>
@@ -123,10 +148,10 @@
                 </div>
             </div>
 
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="bus-problem" data-case-chapter="02">
                 <div class="phase-entry reveal">
                     <div class="phase-text">
-                        <div class="phase-num">01</div>
+                        <div class="phase-num">02</div>
                         <div class="phase-tag">Problem Discovery &amp; Framing</div>
                         <h3 class="phase-title">Validating the problem<br>before proposing a solution</h3>
                         <p class="phase-body">SLTB receives nearly 150 complaints a day. I mapped the problem across
@@ -141,10 +166,10 @@
                 </div>
             </div>
 
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="bus-research" data-case-chapter="03">
                 <div class="phase-entry reverse reveal">
                     <div class="phase-text">
-                        <div class="phase-num">02</div>
+                        <div class="phase-num">03</div>
                         <div class="phase-tag">Stakeholder &amp; User Research</div>
                         <h3 class="phase-title">Mapping 15+ stakeholder groups,<br>surveying 102 real commuters</h3>
                         <p class="phase-body">I categorized stakeholders into Direct, Indirect, and Remote groups, then
@@ -158,10 +183,10 @@
                 </div>
             </div>
 
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="bus-insights" data-case-chapter="04">
                 <div class="phase-entry reveal">
                     <div class="phase-text">
-                        <div class="phase-num">03</div>
+                        <div class="phase-num">04</div>
                         <div class="phase-tag">Turning Research into Decisions</div>
                         <h3 class="phase-title">From raw data<br>to a clear user need</h3>
                         <p class="phase-body">I built user personas including the SLTB bus conductor to keep both
@@ -175,15 +200,22 @@
                 </div>
             </div>
 
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="bus-decisions" data-case-chapter="05">
                 <div class="phase-entry reverse reveal">
                     <div class="phase-text">
-                        <div class="phase-num">04</div>
+                        <div class="phase-num">05</div>
                         <div class="phase-tag">Product Strategy &amp; Prioritization</div>
                         <h3 class="phase-title">Impact vs. feasibility,<br>not gut feeling</h3>
                         <p class="phase-body">I scored every proposed feature on impact and feasibility separating
                             must-build <strong>Targets</strong> from Quick Wins, future Luxury items, and features to
                             retire entirely. Every cut has a reason.</p>
+                        <dl class="case-decision-flow" aria-label="BusLink product decision">
+                            <div><dt>Evidence</dt><dd>Commuter surveys, stakeholder interviews and mapped operational needs</dd></div>
+                            <div><dt>Options</dt><dd>Targets, Quick Wins, future Luxury items and features to retire</dd></div>
+                            <div><dt>Choice</dt><dd>A prioritised MVP focused on the reservation journey</dd></div>
+                            <div><dt>Trade-off</dt><dd>Lower-impact and lower-feasibility ideas were deferred</dd></div>
+                            <div><dt>Validation</dt><dd>The implemented scope was checked through the audited test log</dd></div>
+                        </dl>
                     </div>
                     <div class="phase-img">
                         <img src="../assets/images/Prioritization.png" alt="Prioritization Matrix"
@@ -192,10 +224,10 @@
                 </div>
             </div>
 
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="bus-prioritisation" data-case-chapter="06">
                 <div class="phase-entry reveal">
                     <div class="phase-text">
-                        <div class="phase-num">05</div>
+                        <div class="phase-num">06</div>
                         <div class="phase-tag">Backlog, Requirements &amp; MVP Scope</div>
                         <h3 class="phase-title">Managing a real<br>product backlog</h3>
                         <p class="phase-body">Every feature was logged with a feature ID, user story, and priority level
@@ -212,10 +244,10 @@
                 </div>
             </div>
 
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="bus-solution" data-case-chapter="07">
                 <div class="phase-entry reverse reveal">
                     <div class="phase-text">
-                        <div class="phase-num">06</div>
+                        <div class="phase-num">07</div>
                         <div class="phase-tag">Design &amp; UX</div>
                         <h3 class="phase-title">Wireframing<br>before development</h3>
                         <p class="phase-body">I wireframed key flows including the admin CRUD interface before any
@@ -229,9 +261,9 @@
                 </div>
             </div>
 
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="bus-delivery" data-case-chapter="08">
                 <div class="reveal">
-                    <div class="phase-num">07</div>
+                    <div class="phase-num">08</div>
                     <div class="phase-tag">Sprint Execution</div>
                     <h3 class="phase-title">3 sprints. From proposal to a working product.</h3>
                     <p class="phase-body" style="max-width:560px; margin-bottom:1.75rem;">Sprint 1 focused on discovery
@@ -259,10 +291,10 @@
                 </div>
             </div>
 
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="bus-validation" data-case-chapter="09">
                 <div class="phase-entry reveal">
                     <div class="phase-text">
-                        <div class="phase-num">08</div>
+                        <div class="phase-num">09</div>
                         <div class="phase-tag">Validation &amp; Quality Assurance</div>
                         <h3 class="phase-title">Manually tested<br>not just claimed</h3>
                         <p class="phase-body">Every feature was tracked through a manual test log covering scenario ID,
@@ -276,8 +308,10 @@
                 </div>
             </div>
 
-            <div class="reveal"
+            <div class="cs-section case-chapter case-learning reveal" id="bus-learning" data-case-chapter="10"
                 style="margin-top:4rem; padding-top:4rem; border-top:1px solid rgba(0,0,0,0.08); text-align:center;">
+                <div class="phase-num">10</div>
+                <div class="phase-tag">Outcomes &amp; Learning</div>
                 <p
                     style="font-family:'Playfair Display',serif; font-size:clamp(1.6rem,3vw,2.2rem); font-weight:800; color:var(--navy); line-height:1.4; max-width:800px; margin:0 auto; letter-spacing:-0.01em;">
                     "Product management takes guts: the guts to lead, decide, and stand behind the product you build
@@ -312,6 +346,7 @@
     </div>
 
     <script src="../script.js"></script>
+    <script type="module" src="../scripts/motion/index.js"></script>
 </body>
 
 </html>

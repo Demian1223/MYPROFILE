@@ -3,11 +3,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kapruka Closing the Loop · Demian de Silva</title>
     <meta name="description" content="An independent product and service-improvement case study proposing better complaint visibility and service recovery for Kapruka using research, RICE, user flows and prototypes.">
+    <meta name="theme-color" content="#070a12"><meta property="og:type" content="article">
+    <meta property="og:title" content="Kapruka Service Improvement Case Study · Demian de Silva"><meta property="og:description" content="An independent proposal for complaint visibility and recovery, grounded in review analysis, RICE and prototypes.">
+    <meta property="og:image" content="../assets/images/kapruka/01_cover.png"><meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="../assets/images/Me.jpeg" type="image/jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../styles/phase-3.css">
+    <link rel="stylesheet" href="../styles/final.css">
     <style>
         /* Kapruka accent colour  teal/green personality within the main navy system */
         .kap-accent {
@@ -45,6 +50,7 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#kap-overview">Skip to case study</a>
 
     <nav id="navbar" class="site-nav" aria-label="Main navigation">
         <a href="../index.html" class="nav-logo">Demian de Silva</a>
@@ -147,12 +153,33 @@
     </div>
 
     <!-- CASE STUDY CONTENT -->
+    <nav class="case-progress case-progress--kapruka" aria-label="Kapruka case-study chapters">
+        <ol>
+            <li><a href="#kap-overview">01 <span>Overview</span></a></li><li><a href="#kap-problem">02 <span>Problem</span></a></li>
+            <li><a href="#kap-journey">03 <span>Journey</span></a></li><li><a href="#kap-pain">04 <span>Pain points</span></a></li>
+            <li><a href="#kap-causes">05 <span>Root causes</span></a></li><li><a href="#kap-needs">06 <span>Needs</span></a></li>
+            <li><a href="#kap-opportunity">07 <span>Opportunity</span></a></li><li><a href="#kap-options">08 <span>Options</span></a></li>
+            <li><a href="#kap-priority">09 <span>Priority</span></a></li><li><a href="#kap-solution">10 <span>Solution</span></a></li>
+            <li><a href="#kap-flow">11 <span>Flow</span></a></li><li><a href="#kap-prototype">12 <span>Prototype</span></a></li>
+            <li><a href="#kap-delivery">13 <span>Delivery</span></a></li><li><a href="#kap-targets">14 <span>Targets</span></a></li>
+            <li><a href="#kap-limitations">15 <span>Limits</span></a></li><li><a href="#kap-learning">16 <span>Learning</span></a></li>
+        </ol>
+    </nav>
     <section class="case-study-content">
         <div class="case-study-inner">
 
-            <!-- 01 Problem Context -->
-            <div class="cs-section">
-                <div class="phase-entry reveal"><div class="phase-text"><div class="phase-num">01</div><p class="phase-tag">Problem Context &amp; Definition</p><h3 class="phase-title">The post-purchase gap that erodes trust</h3><div class="cs-section-body">
+            <div class="cs-section case-chapter" id="kap-overview" data-case-chapter="01">
+                <div class="reveal">
+                    <div class="cs-section-num">01</div>
+                    <p class="cs-section-label kap">Product / Service Overview</p>
+                    <h2 class="cs-section-title">A proposed resolution journey grounded in customer evidence</h2>
+                    <div class="cs-section-body"><p>This independent case study examines Kapruka's post-purchase complaint experience and proposes a product and service improvement. The Resolution Centre, service levels and success metrics are proposals for future implementation and testing; they are not shipped features or achieved outcomes.</p></div>
+                </div>
+            </div>
+
+            <!-- 02 Customer Problem -->
+            <div class="cs-section case-chapter" id="kap-problem" data-case-chapter="02">
+                <div class="phase-entry reveal"><div class="phase-text"><div class="phase-num">02</div><p class="phase-tag">Customer Problem &amp; Context</p><h3 class="phase-title">The post-purchase gap that erodes trust</h3><div class="cs-section-body">
                         <p>Kapruka is Sri Lanka's leading e-commerce platform. While their ordering and delivery
                             experience
                             has matured significantly, the post-purchase support journey specifically complaint
@@ -191,7 +218,7 @@
             </div>
 
             <!-- 03 Current Journey -->
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="kap-journey" data-case-chapter="03">
                 <div class="phase-entry reveal"><div class="phase-text"><div class="phase-num">03</div><p class="phase-tag">Current Kapruka Support Journey</p><h3 class="phase-title">Mapping what happens today</h3><div class="cs-section-body">
                         <p>Before proposing anything, I mapped the current support flow as experienced by the customer
                             from identifying the issue through to (attempted) resolution. The journey map exposed
@@ -200,7 +227,7 @@
             </div>
 
             <!-- 04 Pain Points -->
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="kap-pain" data-case-chapter="04">
                 <div class="phase-entry reveal reverse"><div class="phase-text"><div class="phase-num">04</div><p class="phase-tag">Pain Points</p><h3 class="phase-title">Where the experience breaks down</h3><div class="cs-section-body">
                         <p>From the review analysis and journey mapping, four primary pain points emerged consistently:
                         </p>
@@ -229,7 +256,7 @@
             </div>
 
             <!-- 05 Root Cause 5 Whys -->
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="kap-causes" data-case-chapter="05">
                 <div class="phase-entry reveal"><div class="phase-text"><div class="phase-num">05</div><p class="phase-tag">Root Cause Analysis 5 Whys</p><h3 class="phase-title">Getting beneath the symptoms</h3><div class="cs-section-body">
                         <p>To avoid solving surface-level symptoms, I applied the <strong>5 Whys technique</strong> to
                             the
@@ -287,7 +314,7 @@
             </div>
 
             <!-- 06 JTBD -->
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="kap-needs" data-case-chapter="06">
                 <div class="phase-entry reveal reverse"><div class="phase-text"><div class="phase-num">06</div><p class="phase-tag">Jobs to Be Done</p><h3 class="phase-title">What customers are really trying to do</h3><div class="cs-section-body">
                         <p>Using the <strong>Jobs to Be Done</strong> framework, I identified the core functional,
                             emotional, and social jobs customers are hiring the complaint system to do going beyond
@@ -307,7 +334,7 @@
             </div>
 
             <!-- 07 Product Opportunity -->
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="kap-opportunity" data-case-chapter="07">
                 <div class="reveal">
                     <div class="cs-section-num">07</div>
                     <p class="cs-section-label kap">Product Opportunity</p>
@@ -331,7 +358,7 @@
             </div>
 
             <!-- 08 Alternative Approaches -->
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="kap-options" data-case-chapter="08">
                 <div class="reveal">
                     <div class="cs-section-num">08</div>
                     <p class="cs-section-label kap">Alternative Approaches</p>
@@ -366,7 +393,7 @@
             </div>
 
             <!-- 09 RICE -->
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="kap-priority" data-case-chapter="09">
                 <div class="phase-entry reveal"><div class="phase-text"><div class="phase-num">09</div><p class="phase-tag">RICE Prioritisation</p><h3 class="phase-title">Scoring the options not guessing</h3><div class="cs-section-body">
                         <p>I applied the <strong>RICE scoring framework</strong> (Reach, Impact, Confidence, Effort)
                             to evaluate the four solution approaches objectively:</p>
@@ -417,11 +444,18 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div><p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.75rem;"><strong>Centralized Self-Service Resolution</strong> was selected as the highest-priority solution based on RICE (252), driven by high reach and strong impact/confidence relative to effort.</p></div><div class="phase-img"><img src="../assets/images/kapruka/08_rice_prioritisation.png" alt="RICE Prioritisation" onclick="openLightbox('image', this.src)" loading="lazy" decoding="async" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open image: RICE Prioritisation" width="790" height="1123"></div></div>
+                    </div><p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.75rem;"><strong>Centralized Self-Service Resolution</strong> was selected as the highest-priority solution based on RICE (252), driven by high reach and strong impact/confidence relative to effort.</p>
+                    <dl class="case-decision-flow case-decision-flow--kapruka" aria-label="Kapruka product decision">
+                        <div><dt>Evidence</dt><dd>87 public customer reviews, current-journey pain points and root-cause analysis</dd></div>
+                        <div><dt>Options</dt><dd>Four service and product approaches were compared</dd></div>
+                        <div><dt>Choice</dt><dd>A proposed centralized self-service Resolution Centre</dd></div>
+                        <div><dt>Trade-off</dt><dd>Higher implementation effort was accepted for stronger expected visibility and impact</dd></div>
+                        <div><dt>Validation</dt><dd>Requires stakeholder review, usability testing, technical assessment and a measured pilot</dd></div>
+                    </dl></div><div class="phase-img"><img src="../assets/images/kapruka/08_rice_prioritisation.png" alt="RICE Prioritisation" onclick="openLightbox('image', this.src)" loading="lazy" decoding="async" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Open image: RICE Prioritisation" width="790" height="1123"></div></div>
             </div>
 
             <!-- 10 Proposed Solution -->
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="kap-solution" data-case-chapter="10">
                 <div class="phase-entry reveal reverse"><div class="phase-text"><div class="phase-num">10</div><p class="phase-tag">Proposed Solution</p><h3 class="phase-title">A resolution experience customers can trust</h3><div class="cs-section-body">
                         <p>The proposed solution is an <strong>in-app Post-Purchase Resolution Centre</strong> a
                             dedicated
@@ -445,7 +479,7 @@
             </div>
 
             <!-- 11 User Flow -->
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="kap-flow" data-case-chapter="11">
                 <div class="phase-entry reveal"><div class="phase-text"><div class="phase-num">11</div><p class="phase-tag">Customer Experience / User Flow</p><h3 class="phase-title">The resolution journey, step by step</h3><div class="cs-section-body">
                         <p>The proposed customer journey moves from a fragmented, opaque experience to a structured,
                             trackable resolution flow:</p>
@@ -478,7 +512,7 @@
             </div>
 
             <!-- 12 Figma Screens -->
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="kap-prototype" data-case-chapter="12">
                 <div class="phase-entry reveal reverse"><div class="phase-text"><div class="phase-num">12</div><p class="phase-tag">High-Fidelity Figma Screens</p><h3 class="phase-title">What it looks like</h3><div class="cs-section-body">
                         <p>High-fidelity Figma prototypes were designed for the key screens of the Resolution Centre,
                             including the complaint submission flow, status tracker, and escalation modal.</p>
@@ -570,9 +604,9 @@
             </div>
 
             <!-- 15 Jira Readiness -->
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="kap-delivery" data-case-chapter="13">
                 <div class="reveal">
-                    <div class="cs-section-num">15</div>
+                    <div class="cs-section-num">13</div>
                     <p class="cs-section-label kap">Jira Implementation Readiness</p>
                     <h2 class="cs-section-title">From strategy to sprint-ready backlog</h2>
                     <div class="cs-section-body">
@@ -619,11 +653,11 @@
             </div>
 
             <!-- 16 Success Metrics -->
-            <div class="cs-section">
+            <div class="cs-section case-chapter" id="kap-targets" data-case-chapter="14">
                 <div class="reveal">
-                    <div class="cs-section-num">16</div>
-                    <p class="cs-section-label kap">Success Metrics</p>
-                    <h2 class="cs-section-title">How we know it's working</h2>
+                    <div class="cs-section-num">14</div>
+                    <p class="cs-section-label kap">Success Targets · Not Achieved Outcomes</p>
+                    <h2 class="cs-section-title">How the proposal should be measured</h2>
                     <div class="cs-section-body">
                         <p>A successful Resolution Centre should move the needle on these measurable outcomes:</p>
                     </div>
@@ -652,9 +686,20 @@
                 </div>
             </div>
 
-            <!-- 17 Reflection -->
-            <div class="cs-section">
-                <div class="phase-entry reveal"><div class="phase-text"><div class="phase-num">17</div><p class="phase-tag">Reflection / What I Learned</p><h3 class="phase-title">What this built in me</h3><div class="cs-section-body">
+            <div class="cs-section case-chapter" id="kap-limitations" data-case-chapter="15">
+                <div class="reveal">
+                    <div class="cs-section-num">15</div>
+                    <p class="cs-section-label kap">Limitations</p>
+                    <h2 class="cs-section-title">What still needs real-world validation</h2>
+                    <div class="cs-section-body">
+                        <p>This is an independent proposal based on public customer-review evidence. It has not been implemented by Kapruka, tested with Kapruka's internal teams, or validated against operational data. The proposed service levels, effort assumptions, customer flows and targets would need stakeholder review, usability testing, technical assessment and a measured pilot before adoption.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 16 Reflection -->
+            <div class="cs-section case-chapter" id="kap-learning" data-case-chapter="16">
+                <div class="phase-entry reveal"><div class="phase-text"><div class="phase-num">16</div><p class="phase-tag">Reflection / What I Learned</p><h3 class="phase-title">What this built in me</h3><div class="cs-section-body">
                         <p>This case study reinforced one belief above all others: <strong>the best product thinking
                                 starts with evidence, not with assumptions.</strong></p>
                         <p>The 87 reviews I analysed weren't just data they were real people describing real
@@ -702,6 +747,7 @@
     </div>
 
     <script src="../script.js"></script>
+    <script type="module" src="../scripts/motion/index.js"></script>
 
 
 </body></html>

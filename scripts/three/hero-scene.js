@@ -5,6 +5,12 @@ import { createAlignmentSystem, separatedState, alignedState, applyState } from 
 const THREE_URL = 'https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js';
 const stage = document.querySelector('[data-webgl-stage]');
 const hero = document.getElementById('hero');
+const hero3DState = window.hero3DState = window.hero3DState || {
+  controlled: false,
+  progress: 0,
+  cameraProgress: 0,
+  lightProgress: 0
+};
 
 if (stage && hero && !stage.dataset.webglMounted && webGLAvailable()) {
   initialise().catch(() => stage.classList.add('webgl-fallback'));
@@ -34,7 +40,7 @@ async function initialise() {
   stage.classList.add('webgl-ready');
 
   const materials = createMaterials(THREE, quality);
-  const { system, panels, geometry } = createAlignmentSystem(THREE, materials, quality);
+  const { system, panels, geometry, field } = createAlignmentSystem(THREE, materials, quality);
   scene.add(system);
 
   const ambient = new THREE.HemisphereLight(0xcfd7ff, 0x080a12, 1.35);
@@ -63,6 +69,10 @@ async function initialise() {
 
   const updateScroll = () => {
     if (quality.reducedMotion) return;
+    if (hero3DState.controlled) {
+      alignment = THREE.MathUtils.clamp(hero3DState.progress, 0, 1);
+      return;
+    }
     const rect = hero.getBoundingClientRect();
     alignment = THREE.MathUtils.smoothstep(THREE.MathUtils.clamp(-rect.top / Math.max(1, rect.height * 0.62), 0, 1), 0, 1);
   };
@@ -87,15 +97,20 @@ async function initialise() {
     const responsiveScale = quality.mobile ? Math.min(1, stage.clientWidth / 410) : 1;
     system.scale.setScalar(responsiveScale * (0.86 + easedIntro * 0.14));
     system.position.y = THREE.MathUtils.lerp(-0.18, 0.04, easedIntro) + alignment * 0.18;
-    system.position.z = THREE.MathUtils.lerp(-1.2, 0, easedIntro) - alignment * 0.35;
+    system.position.z = THREE.MathUtils.lerp(-1.2, 0, easedIntro) - alignment * 0.35 - hero3DState.cameraProgress * 0.28;
     system.rotation.x = pointer.y * 0.055;
     system.rotation.y = pointer.x * 0.085;
     if (continuousMotion) {
       system.position.y += Math.sin(elapsed * 0.55) * 0.035 * (1 - alignment);
       panels.forEach((panel, index) => { panel.position.z += Math.sin(elapsed * 0.42 + index * 1.7) * 0.018 * (1 - alignment); });
+      panels[0].rotation.y += elapsed * 0.08;
+      panels[1].rotation.y -= elapsed * 0.035;
+      panels[2].rotation.z += elapsed * 0.045;
+      field.rotation.y = elapsed * 0.025 + pointer.x * 0.12;
+      field.rotation.x = Math.sin(elapsed * 0.18) * 0.08 + pointer.y * 0.08;
     }
     rim.position.x = 4.5 + pointer.x * 1.2;
-    rim.intensity = 8 - alignment * 2.2;
+    rim.intensity = 8 - alignment * 2.2 - hero3DState.lightProgress * 1.4;
     renderer.render(scene, camera);
     if (continuousMotion || intro < 1 || Math.abs(pointer.x - targetPointer.x) > 0.001 || Math.abs(pointer.y - targetPointer.y) > 0.001) frame = requestAnimationFrame(render);
   };
