@@ -89,7 +89,7 @@
   <!-- ══════════════════════════════════════════
      FOOTER
 ══════════════════════════════════════════ -->
-  <section id="hero" class="story-chapter hero-identity" data-scene="identity">
+  <section id="hero" class="story-chapter hero-identity" data-scene="identity" data-chapter="01">
     <div class="hero-shell">
       <div class="hero-copy">
         <p class="hero-pre hero-positioning">Product × Technology × Business</p>
@@ -131,7 +131,8 @@
       </svg>
       Scroll
     </div>
-  </section><section id="approach" class="story-chapter product-approach" data-scene="approach">
+  </section><section id="approach" class="story-chapter product-approach" data-scene="approach" data-chapter="02">
+    <span class="chapter-axis" aria-hidden="true"></span>
     <div class="product-work-inner">
       <div class="reveal">
         <p class="section-label">How I Think</p>
@@ -149,7 +150,7 @@
         <li class="approach-step" data-step="learning"><span>08</span><strong>Learn</strong></li>
       </ol>
     </div>
-  </section><section id="product-work" class="story-chapter selected-product-work" data-scene="product-work">
+  </section><section id="product-work" class="story-chapter selected-product-work" data-scene="product-work" data-chapter="03">
     <div class="product-work-inner">
 
       <div class="reveal">
@@ -175,6 +176,12 @@
             <span class="pw-card-type">Product Case Study · Staffordshire University Capstone</span>
           </div>
           <h3 class="pw-card-title">BusLink</h3>
+          <dl class="product-meta-grid" aria-label="BusLink project metadata">
+            <div><dt>Role</dt><dd>Product Manager · Project Manager · Business Analyst · Scrum Master</dd></div>
+            <div><dt>Context</dt><dd>University capstone</dd></div>
+            <div><dt>Focus</dt><dd>Intercity booking experience</dd></div>
+            <div><dt>Status</dt><dd>Working, test-validated system</dd></div>
+          </dl>
           <p class="pw-card-desc"><strong>Improving the intercity bus-booking experience.</strong> BusLink began with
             commuter and stakeholder evidence, then moved through insight synthesis, feature prioritisation, backlog
             decisions, UX, three Agile sprints and system validation.</p>
@@ -223,6 +230,12 @@
             <span class="pw-card-type">Independent Product / Service-Improvement Case Study</span>
           </div>
           <h3 class="pw-card-title">Closing the Loop</h3>
+          <dl class="product-meta-grid" aria-label="Kapruka project metadata">
+            <div><dt>Role</dt><dd>Independent product and service analysis</dd></div>
+            <div><dt>Context</dt><dd>Kapruka customer support</dd></div>
+            <div><dt>Focus</dt><dd>Complaint visibility and recovery</dd></div>
+            <div><dt>Status</dt><dd>Proposed solution and target metrics</dd></div>
+          </dl>
           <p class="pw-card-desc"><strong>Improving customer complaint visibility and service recovery.</strong> This
             independent case study uses customer-review evidence, journey analysis, root-cause analysis and RICE to
             compare options and propose a more transparent resolution experience.</p>
@@ -265,22 +278,30 @@
       </div>
 
     </div>
-  </section><section id="achievement-wall">
+  </section><section id="achievement-wall" class="story-chapter product-evidence" data-scene="product-evidence" data-chapter="04">
+    <div class="evidence-intro reveal">
+      <p class="section-label">Product Evidence</p>
+      <h2>Decisions backed by<br><em>work you can inspect.</em></h2>
+      <p>Selected evidence from BusLink. These figures describe completed research and validation work, not projected outcomes.</p>
+    </div>
     <div class="achievement-wall-inner reveal">
       <div class="achievement-cell">
         <div class="achievement-num">11<span class="accent">+</span></div>
         <div class="achievement-label">Stakeholders across 5 groups interviewed</div>
+        <div class="achievement-source">BusLink · Discovery evidence</div>
       </div>
       <div class="achievement-cell">
         <div class="achievement-num">300<span class="accent">+</span></div>
         <div class="achievement-label">Test cases validated in BusLink</div>
+        <div class="achievement-source">BusLink · System validation</div>
       </div>
       <div class="achievement-cell">
         <div class="achievement-num">99<span class="accent">.65%</span></div>
         <div class="achievement-label">Pass rate - not assumed, audited</div>
+        <div class="achievement-source">BusLink · Audited test result</div>
       </div>
     </div>
-  </section><section id="capabilities" class="story-chapter product-capabilities" data-scene="capabilities">
+  </section><section id="capabilities" class="story-chapter product-capabilities" data-scene="capabilities" data-chapter="05">
     <div class="product-work-inner">
       <div class="reveal">
         <p class="section-label">Product Capabilities</p>
@@ -290,27 +311,27 @@
       <div class="capability-groups">
         <section class="capability-group" aria-labelledby="capability-discovery">
           <h3 id="capability-discovery">Discovery</h3>
-          <p>Problem framing · User research · Stakeholder research · Customer journey analysis · Personas · Insight synthesis</p>
+          <p><strong>Understand the problem before deciding what to build.</strong><span>Problem framing · User research · Stakeholder research · Journey analysis · Insight synthesis</span></p>
           <a href="projects/buslink.html">Evidence in BusLink</a>
         </section>
         <section class="capability-group" aria-labelledby="capability-decisions">
           <h3 id="capability-decisions">Decision Making</h3>
-          <p>Opportunity identification · Prioritisation · RICE · Requirements · Trade-off thinking · Product strategy</p>
+          <p><strong>Turn evidence into a clear and defensible choice.</strong><span>Opportunity identification · Prioritisation · RICE · Requirements · Trade-off thinking · Product strategy</span></p>
           <a href="projects/kapruka.html">Evidence in Kapruka</a>
         </section>
         <section class="capability-group" aria-labelledby="capability-delivery">
           <h3 id="capability-delivery">Delivery</h3>
-          <p>Backlog management · Jira · Agile collaboration · Sprint planning · Stakeholder communication · Technical collaboration</p>
+          <p><strong>Move the decision into coordinated, testable delivery.</strong><span>Backlog management · Jira · Agile collaboration · Sprint planning · Stakeholder communication</span></p>
           <a href="projects/buslink.html">Evidence in BusLink</a>
         </section>
         <section class="capability-group" aria-labelledby="capability-validation">
           <h3 id="capability-validation">Validation</h3>
-          <p>Testing · Feedback · Iteration · Success metrics · Product learning</p>
+          <p><strong>Test assumptions and carry the learning forward.</strong><span>Testing · Feedback · Iteration · Success metrics · Product learning</span></p>
           <a href="projects/index.html">Explore the evidence</a>
         </section>
       </div>
     </div>
-  </section><section id="background" class="story-chapter technology-business" data-scene="technology-business">
+  </section><section id="background" class="story-chapter technology-business" data-scene="technology-business" data-chapter="06">
     <div class="journey-inner">
       <div class="reveal">
         <p class="section-label" style="color:var(--navy-light);">Technology × Business</p>
@@ -334,7 +355,8 @@
           </div>
           <div class="foundation-connector">
             <span>Product</span>
-            <p>Connects what is useful, feasible and valuable.</p>
+            <p>User needs · Prioritisation · Decision making · Validation</p>
+            <small>Connects what is useful, feasible and valuable.</small>
           </div>
           <div class="foundation-pillar foundation-pillar--business">
             <span>02</span>
@@ -363,7 +385,13 @@
         </div>
       </div>
     </div>
-  </section><section id="tv">
+  </section><header id="leadership" class="story-chapter leadership-chapter" data-scene="leadership" data-chapter="07">
+    <div class="leadership-intro">
+      <p class="section-label">Leadership &amp; Communication</p>
+      <h2>Listen clearly.<br><em>Represent confidently.</em></h2>
+      <p>Evidence of communication, presentation, stakeholder representation and leadership across live media, industry conversations and elected roles.</p>
+    </div>
+  </header><section id="tv" class="leadership-part">
     <div class="tv-grid">
 
       <!-- Text -->
@@ -412,7 +440,7 @@
       </div>
 
     </div>
-  </section><section id="media">
+  </section><section id="media" class="leadership-part">
     <div class="media-inner">
 
       <div class="media-watermark">A Voice</div>
@@ -501,7 +529,7 @@
       </div>
 
     </div>
-  </section><section id="batchrep">
+  </section><section id="batchrep" class="leadership-part">
     <div class="batchrep-inner">
 
       <div class="reveal">
@@ -543,7 +571,7 @@
       </div>
 
     </div>
-  </section><section id="psychology">
+  </section><section id="psychology" class="leadership-part">
     <div class="psych-inner">
 
       <div class="reveal">
@@ -570,7 +598,7 @@
       </div>
 
     </div>
-  </section><section id="compere">
+  </section><section id="compere" class="leadership-part">
     <div class="compere-inner reveal">
       <img src="assets/images/PUBLIC.jpg" alt="Best Compere award" class="compere-award-img" loading="lazy" decoding="async" width="800" height="532">
       <div>
@@ -587,7 +615,7 @@
         </p>
       </div>
     </div>
-  </section><section id="closing">
+  </section><section id="closing" class="story-chapter contact-chapter" data-scene="contact" data-chapter="08">
     <div style="position:relative; z-index:1;">
       <div class="reveal">
         <p class="section-label" style="justify-content:center; margin-bottom:2rem;">Let's Build</p>

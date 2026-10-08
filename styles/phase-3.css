@@ -1398,3 +1398,221 @@ footer {
 .case-study-nav + footer a {
   color: var(--paper) !important;
 }
+
+/* Phase 5: connect the homepage into eight deliberate editorial chapters. */
+.story-chapter {
+  position: relative;
+}
+
+.story-chapter[data-chapter]::after {
+  content: attr(data-chapter);
+  position: absolute;
+  top: clamp(1.4rem, 3vw, 2.5rem);
+  right: var(--page-pad);
+  z-index: 4;
+  color: currentColor;
+  font-size: 0.62rem;
+  font-weight: 750;
+  letter-spacing: 0.22em;
+  opacity: 0.34;
+}
+
+.product-approach {
+  overflow: hidden;
+}
+
+.chapter-axis {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1px);
+  width: 1px;
+  height: clamp(5rem, 10vw, 9rem);
+  background: linear-gradient(rgba(102, 130, 255, 0.75), rgba(7, 10, 18, 0.14));
+}
+
+.approach-step {
+  position: relative;
+}
+
+.approach-step::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 72px;
+  width: clamp(1rem, 3vw, 3rem);
+  height: 1px;
+  background: rgba(7, 10, 18, 0.18);
+}
+
+.approach-step:nth-child(even)::before {
+  width: clamp(2rem, 8vw, 8rem);
+}
+
+#achievement-wall {
+  padding-top: clamp(6rem, 10vw, 10rem);
+}
+
+.evidence-intro {
+  display: grid;
+  grid-template-columns: minmax(170px, 0.42fr) minmax(300px, 1fr) minmax(240px, 0.55fr);
+  gap: clamp(2rem, 5vw, 6rem);
+  align-items: end;
+  max-width: var(--content-wide);
+  margin: 0 auto clamp(4rem, 7vw, 7rem);
+}
+
+.evidence-intro h2,
+.leadership-intro h2 {
+  color: var(--paper);
+  font-family: Inter, sans-serif;
+  font-size: clamp(2.8rem, 5.8vw, 6.5rem);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+}
+
+.evidence-intro h2 em,
+.leadership-intro h2 em {
+  font-family: 'Playfair Display', serif;
+  text-transform: none;
+}
+
+.evidence-intro > p:last-child,
+.leadership-intro > p:last-child {
+  color: var(--cool-grey);
+  line-height: 1.75;
+}
+
+.achievement-source {
+  margin-top: 2rem;
+  color: rgba(244, 242, 237, 0.42);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.product-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 2rem 0;
+  border-top: 1px solid var(--hairline);
+}
+
+.product-meta-grid > div {
+  padding: 1rem 1rem 1rem 0;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.product-meta-grid dt {
+  margin-bottom: 0.35rem;
+  color: var(--cool-grey);
+  font-size: 0.58rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.product-meta-grid dd {
+  color: var(--paper);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.capability-group p strong,
+.capability-group p span {
+  display: block;
+}
+
+.capability-group p strong {
+  margin-bottom: 0.65rem;
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 650;
+}
+
+.capability-group p span {
+  line-height: 1.75;
+}
+
+.foundation-connector small {
+  display: block;
+  max-width: 190px;
+  margin: 1.2rem auto 0;
+  color: var(--cool-grey);
+  font-size: 0.7rem;
+  line-height: 1.6;
+}
+
+.leadership-chapter {
+  padding-top: clamp(7rem, 12vw, 12rem);
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.leadership-intro {
+  display: grid;
+  grid-template-columns: minmax(170px, 0.42fr) minmax(300px, 1fr) minmax(240px, 0.55fr);
+  gap: clamp(2rem, 5vw, 6rem);
+  align-items: end;
+  width: min(calc(100% - (var(--page-pad) * 2)), var(--content-wide));
+  margin: 0 auto clamp(2rem, 5vw, 5rem);
+}
+
+.leadership-part {
+  position: relative;
+}
+
+.leadership-part::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: var(--page-pad);
+  left: var(--page-pad);
+  height: 1px;
+  background: var(--hairline);
+}
+
+@media (max-width: 820px) {
+  .story-chapter[data-chapter]::after {
+    top: 1rem;
+  }
+
+  .chapter-axis {
+    left: var(--page-pad);
+  }
+
+  .approach-step::before {
+    display: none;
+  }
+
+  .evidence-intro,
+  .leadership-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .evidence-intro > p:last-child,
+  .leadership-intro > p:last-child {
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 520px) {
+  .story-chapter[data-chapter]::after {
+    right: 1.25rem;
+  }
+
+  .evidence-intro,
+  .leadership-intro {
+    gap: 1.4rem;
+  }
+
+  .evidence-intro h2,
+  .leadership-intro h2 {
+    font-size: clamp(2.5rem, 13vw, 4rem);
+  }
+
+  .product-meta-grid {
+    grid-template-columns: 1fr;
+  }
+}
