@@ -122,13 +122,32 @@
       </div>
 
       <div class="hero-visual" aria-hidden="true">
-        <div id="hero-3d-stage" class="hero-3d-stage" data-webgl-stage>
-          <span class="hero-stage-orbit hero-stage-orbit--one"></span>
-          <span class="hero-stage-orbit hero-stage-orbit--two"></span>
-          <span class="hero-stage-axis"></span>
-          <span class="hero-stage-label">Future WebGL stage</span>
+        <div id="hero-visual-stage" class="hero-3d-stage interactive-world" aria-hidden="true">
+          <canvas id="hero-dot-field" class="hero-dot-field"></canvas>
+          <svg class="hero-guide-illustration" viewBox="0 0 640 640" role="presentation">
+            <defs><clipPath id="guide-portrait-clip"><circle cx="0" cy="0" r="88"></circle></clipPath></defs>
+            <g class="world-connections" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M142 176 C238 126 308 226 320 312"></path><path d="M500 174 C410 132 350 218 320 312"></path><path d="M508 464 C420 512 348 418 320 312"></path>
+            </g>
+            <g class="world-node world-node--user" transform="translate(104 132)">
+              <circle r="46"></circle><circle r="7" cx="-13" cy="-4"></circle><circle r="7" cx="13" cy="-4"></circle><path d="M-18 17 Q0 30 18 17" fill="none"></path><text y="72">USER NEEDS</text>
+            </g>
+            <g class="world-node world-node--technology" transform="translate(530 132)">
+              <rect x="-43" y="-43" width="86" height="86" rx="18"></rect><path d="M-20-12H20M-20 0H20M-20 12H8"></path><text y="72">TECHNOLOGY</text>
+            </g>
+            <g class="world-node world-node--business" transform="translate(532 494)">
+              <path d="M-42 32V-28M-18 32V-4M6 32V-18M30 32V-40"></path><text y="72">BUSINESS</text>
+            </g>
+            <g class="guide-character" transform="translate(320 342)">
+              <ellipse class="guide-shadow" cx="0" cy="112" rx="92" ry="16"></ellipse>
+              <circle class="guide-portrait-ring" r="98"></circle>
+              <image class="guide-portrait" href="assets/images/Me.jpeg" x="-88" y="-88" width="176" height="176" preserveAspectRatio="xMidYMid slice" clip-path="url(#guide-portrait-clip)"></image>
+              <circle class="guide-portrait-highlight" r="91"></circle>
+              <text class="guide-badge" x="0" y="132">PRODUCT THINKER</text>
+            </g>
+          </svg>
+          <div class="hero-guide-message">Hi, I’m Demian. I connect people, technology and business.</div>
         </div>
-        <img src="assets/images/Me.jpeg" alt="" class="hero-avatar" loading="eager" decoding="async" width="1066" height="1280">
       </div>
     </div>
 
@@ -138,7 +157,9 @@
       </svg>
       Scroll
     </div>
-  </section><section id="approach" class="story-chapter product-approach" data-scene="approach" data-chapter="03">
+  </section><aside id="story-guide" class="story-guide" aria-hidden="true">
+    <img class="story-guide-avatar" src="assets/images/Me.jpeg" alt="" width="1066" height="1280"><span class="story-guide-message">Let me show you how I think.</span>
+  </aside><section id="approach" class="story-chapter product-approach" data-scene="approach" data-chapter="03">
     <span class="chapter-axis" aria-hidden="true"></span>
     <div class="product-work-inner">
       <div class="reveal">
@@ -652,7 +673,9 @@
   </div>
 
   <script src="script.js"></script>
-  <script type="module" src="scripts/three/hero-scene.js"></script>
+  <script type="module" src="scripts/interactive/site-particles.js"></script>
+  <script type="module" src="scripts/interactive/hero-world.js"></script>
+  <script type="module" src="scripts/interactive/ambient-story.js"></script>
   <script type="module" src="scripts/motion/index.js"></script>
 
 

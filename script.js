@@ -175,6 +175,9 @@ const tvVideo = document.getElementById('tv-video');
 let videoVisible = false;
 function updateVideo() {
   if (!tvVideo) return;
+  tvVideo.muted = true;
+  tvVideo.defaultMuted = true;
+  tvVideo.volume = 0;
   if (videoVisible && !document.hidden && !motionPreference.matches) {
     const play = tvVideo.play();
     if (play?.catch) play.catch(() => { tvVideo.controls = true; });
@@ -182,6 +185,15 @@ function updateVideo() {
 }
 if (tvVideo) {
   tvVideo.autoplay = false;
+  tvVideo.muted = true;
+  tvVideo.defaultMuted = true;
+  tvVideo.volume = 0;
+  tvVideo.addEventListener('volumechange', () => {
+    if (!tvVideo.muted || tvVideo.volume !== 0) {
+      tvVideo.muted = true;
+      tvVideo.volume = 0;
+    }
+  });
   if (supportsObserver) {
     new IntersectionObserver(entries => {
       videoVisible = entries[0].isIntersecting;

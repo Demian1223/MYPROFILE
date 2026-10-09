@@ -6,14 +6,9 @@ const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const html = read('index.html');
 const css = read('styles/final.css');
 const script = read('script.js');
-const objects = read('scripts/three/objects.js');
 const motion = read('scripts/motion/homepage-motion.js');
 
-assert.match(objects, /TorusKnotGeometry/, 'Product uses an organic sculptural form');
-assert.match(objects, /IcosahedronGeometry/, 'Technology uses a precise lattice form');
-assert.match(objects, /TorusGeometry/, 'Business uses an orbital form');
-assert.match(objects, /decision-signals/, 'restrained spatial signals exist');
-assert.doesNotMatch(objects, /roundedPanelGeometry|ExtrudeGeometry/, 'rectangular card geometry was removed');
+assert.doesNotMatch(html, /scripts\/three\/hero-scene\.js|data-webgl-stage/, '3D hero was removed');
 assert.match(script, /hero\.after\(tv\)[\s\S]*tv\.after\(approach\)[\s\S]*approach\.after\(media\)/, 'credibility-led runtime order exists');
 assert.match(html, /id="tv"[^>]*data-chapter="02"/, 'Sirasa TV is chapter 02');
 assert.match(html, /id="media"[^>]*data-chapter="04"/, 'Career Compass is chapter 04');
@@ -40,4 +35,4 @@ for (const page of ['index.html', 'projects/index.html', 'projects/buslink.html'
   }
 }
 
-console.log('PASS visual revision: sculptural hero, credibility order, reversible motion, education imagery and ratio-led media.');
+console.log('PASS visual revision: 3D hero removed, credibility order, reversible motion, education imagery and ratio-led media.');

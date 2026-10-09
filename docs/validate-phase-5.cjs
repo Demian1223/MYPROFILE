@@ -34,7 +34,7 @@ assert.equal((html.match(/class="capability-group"/g) || []).length, 4, 'four ca
 assert.match(html, /Leadership &amp; Communication/, 'leadership chapter framing exists');
 assert.match(html, /mailto:demiandesilva47@gmail\.com/, 'contact email remains');
 assert.match(html, /assets\/PDFS\/CV_PM\.pdf/, 'CV remains linked');
-assert.match(html, /scripts\/three\/hero-scene\.js/, 'Three.js hero entry remains linked');
+assert.doesNotMatch(html, /scripts\/three\/hero-scene\.js|data-webgl-stage/, 'removed WebGL hero is not mounted');
 assert.match(css, /\.evidence-intro/, 'evidence composition is styled');
 assert.match(css, /\.leadership-intro/, 'leadership composition is styled');
 assert.match(css, /@media \(max-width: 520px\)/, 'mobile treatment remains');

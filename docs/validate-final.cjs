@@ -9,7 +9,6 @@ const all = pages.map(read).join('\n');
 const bus = read('projects/buslink.html');
 const kap = read('projects/kapruka.html');
 const motion = read('scripts/motion/index.js') + read('scripts/motion/homepage-motion.js') + read('scripts/motion/case-study-motion.js');
-const three = read('scripts/three/hero-scene.js');
 
 for (const page of pages) assert.match(read(page), /styles\/final\.css/, `${page} links final CSS`);
 for (let i = 1; i <= 10; i++) assert.match(bus, new RegExp(`data-case-chapter="${String(i).padStart(2, '0')}"`), `BusLink chapter ${i}`);
@@ -21,7 +20,7 @@ assert.match(kap, /id="kap-limitations"/, 'Kapruka limitations are documented');
 assert.match(motion, /gsap@3\.12\.5/, 'GSAP is version pinned');
 assert.match(motion, /ScrollTrigger/, 'ScrollTrigger is integrated');
 assert.doesNotMatch(motion, /Lenis/i, 'Lenis was not introduced');
-assert.match(three, /window\.hero3DState/, 'Three.js exposes the shared motion state');
+assert.doesNotMatch(read('index.html'), /scripts\/three\/hero-scene\.js|data-webgl-stage/, 'removed WebGL hero is not mounted');
 assert.match(all, /CV_PM\.pdf/, 'CV remains linked');
 assert.match(all, /mailto:/, 'email remains linked');
 assert.ok(fs.existsSync(path.join(root, 'README.md')), 'README exists');

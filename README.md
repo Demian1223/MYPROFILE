@@ -7,10 +7,9 @@ A static, progressively enhanced portfolio presenting product work at the inters
 - Semantic HTML5
 - CSS with responsive layouts and reduced-motion support
 - Vanilla JavaScript
-- Three.js `0.170.0` for the hero scene
 - GSAP and ScrollTrigger `3.12.5` for restrained scroll choreography
 
-Three.js and GSAP are loaded from version-pinned jsDelivr URLs. The complete content and static visual design remain available if those imports fail.
+GSAP is loaded from a version-pinned jsDelivr URL. The complete content and static visual design remain available if it fails.
 
 ## Run locally
 
@@ -31,14 +30,14 @@ assets/                    Original images, video and CV
 styles/phase-3.css         Main premium visual system
 styles/final.css           Final case-study and motion-support layer
 script.js                  Shared navigation, reveal, counter, media and lightbox behavior
-scripts/three/             Modular Three.js hero renderer, objects, materials and quality tiers
 scripts/motion/            GSAP bootstrap, homepage motion and case-study motion
+scripts/interactive/       Canvas dot field and SVG-guide interaction
 docs/                      Inventory, audit reports and dependency-free validation scripts
 ```
 
 ## Progressive enhancement
 
-HTML contains all essential text, links and evidence. CSS provides the complete static design. JavaScript adds lightbox behavior, Three.js and motion. WebGL failure leaves the Phase 3 hero visible. Reduced-motion users receive stable Three.js composition and direct content presentation.
+HTML contains all essential text, links and evidence. CSS provides the complete static design. JavaScript adds lightbox behavior and restrained motion. Reduced-motion users receive direct content presentation.
 
 ## Assets
 
@@ -55,12 +54,13 @@ node docs/validate-phase-4.cjs
 node docs/validate-phase-5.cjs
 node docs/validate-final.cjs
 node docs/validate-visual-revision.cjs
+node docs/validate-interactive-world.cjs
 ```
 
-Visual verification in real desktop and mobile browsers remains required for WebGL, responsive composition and motion timing.
+Visual verification in real desktop and mobile browsers remains required for responsive composition and motion timing.
 
 ## Deployment
 
 Deploy the repository root as a static site on GitHub Pages, Netlify, Vercel, or equivalent hosting. No install or build command is required. The publish directory is the repository root. Keep the relative folder structure unchanged.
 
-External CDN access is required for Three.js and GSAP enhancements. The portfolio remains readable and navigable when those dependencies are unavailable.
+External CDN access is required for GSAP enhancements. The portfolio remains readable and navigable when that dependency is unavailable.
