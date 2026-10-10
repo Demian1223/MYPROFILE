@@ -26,7 +26,7 @@ function initialiseAmbientStory() {
   let frame = 0;
   let last = 0;
   let evidenceFocus = -1;
-  const pointer = { x: .5, y: .5, active: false, speed: 0, lastX: .5, lastY: .5 };
+  const pointer = { x: .5, y: .5, active: false, down: false, speed: 0, lastX: .5, lastY: .5 };
 
   function attach(section) {
     if (!section || section === active && canvas.parentElement === section) return;
@@ -82,11 +82,11 @@ function initialiseAmbientStory() {
       }
       if (particle.x < .02 || particle.x > .98) particle.vx *= -1;
       if (particle.y < .02 || particle.y > .98) particle.vy *= -1;
-      if (pointer.active && !coarse && !reducedMotion.matches) {
+      if (pointer.active && !reducedMotion.matches) {
         const dx = particle.x - pointer.x;
         const dy = particle.y - pointer.y;
         const distance = Math.hypot(dx * width, dy * height);
-        const radius = Math.min(290, 190 + pointer.speed * 2600);
+        const radius = Math.min(coarse ? 245 : 290, (coarse ? 165 : 190) + pointer.speed * 2600);
         if (distance < radius && distance > 0) {
           const force = Math.pow(1 - distance / radius, 1.35) * (.009 + Math.min(.026, pointer.speed * .32));
           particle.x += (dx * width / distance) * force;
@@ -213,18 +213,32 @@ function initialiseAmbientStory() {
       const rect = active.getBoundingClientRect(); pointer.x = (event.clientX - rect.left) / width; pointer.y = (event.clientY - rect.top) / height;
     }, { passive: true });
   });
-  if (!coarse) {
-    addEventListener('pointermove', event => {
-      const rect = active.getBoundingClientRect();
-      const nextX = (event.clientX - rect.left) / Math.max(1, width);
-      const nextY = (event.clientY - rect.top) / Math.max(1, height);
-      pointer.speed = Math.min(.08, Math.hypot(nextX - pointer.lastX, nextY - pointer.lastY));
-      pointer.lastX = pointer.x = nextX;
-      pointer.lastY = pointer.y = nextY;
-      pointer.active = true;
-    }, { passive: true });
-    document.documentElement.addEventListener('pointerleave', () => { pointer.active = false; pointer.speed = 0; }, { passive: true });
+  function updatePointer(event) {
+    if (coarse && !pointer.down) return;
+    const rect = active.getBoundingClientRect();
+    const nextX = (event.clientX - rect.left) / Math.max(1, width);
+    const nextY = (event.clientY - rect.top) / Math.max(1, height);
+    pointer.speed = Math.min(.08, Math.hypot(nextX - pointer.lastX, nextY - pointer.lastY));
+    pointer.lastX = pointer.x = nextX;
+    pointer.lastY = pointer.y = nextY;
+    pointer.active = true;
   }
+  addEventListener('pointerdown', event => {
+    pointer.down = true;
+    const rect = active.getBoundingClientRect();
+    pointer.lastX = (event.clientX - rect.left) / Math.max(1, width);
+    pointer.lastY = (event.clientY - rect.top) / Math.max(1, height);
+    updatePointer(event);
+  }, { passive: true });
+  addEventListener('pointermove', updatePointer, { passive: true });
+  function releasePointer() {
+    pointer.down = false;
+    pointer.speed = 0;
+    if (coarse) setTimeout(() => { if (!pointer.down) pointer.active = false; }, 180);
+  }
+  addEventListener('pointerup', releasePointer, { passive: true });
+  addEventListener('pointercancel', releasePointer, { passive: true });
+  document.documentElement.addEventListener('pointerleave', () => { pointer.active = false; pointer.down = false; pointer.speed = 0; }, { passive: true });
   addEventListener('scroll', pickActive, { passive: true });
   addEventListener('resize', resize, { passive: true });
   document.addEventListener('visibilitychange', () => { if (!document.hidden && !frame) frame = requestAnimationFrame(draw); });

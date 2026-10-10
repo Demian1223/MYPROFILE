@@ -20,7 +20,7 @@ function initialiseSiteParticles() {
     vy: (Math.random() - .5) * .2,
     size: index % 11 === 0 ? 2.8 : 1.55 + Math.random() * .65
   }));
-  const pointer = { x: innerWidth / 2, y: innerHeight / 2, active: false, speed: 0, previousX: innerWidth / 2, previousY: innerHeight / 2 };
+  const pointer = { x: innerWidth / 2, y: innerHeight / 2, active: false, down: false, speed: 0, previousX: innerWidth / 2, previousY: innerHeight / 2 };
   let width = innerWidth;
   let height = innerHeight;
   let ratio = 1;
@@ -56,11 +56,11 @@ function initialiseSiteParticles() {
       if (particle.y < -12) particle.y = height + 12;
       if (particle.y > height + 12) particle.y = -12;
 
-      if (pointer.active && !coarsePointer && !reducedMotion.matches) {
+      if (pointer.active && !reducedMotion.matches) {
         const dx = particle.x - pointer.x;
         const dy = particle.y - pointer.y;
         const distance = Math.hypot(dx, dy);
-        const radius = Math.min(440, 250 + pointer.speed * 6);
+        const radius = Math.min(coarsePointer ? 330 : 440, (coarsePointer ? 210 : 250) + pointer.speed * 6);
         if (distance > 0 && distance < radius) {
           const force = Math.pow(1 - distance / radius, 1.25) * (2.2 + Math.min(8, pointer.speed * .12));
           particle.x += dx / distance * force;
@@ -101,15 +101,29 @@ function initialiseSiteParticles() {
     if (!reducedMotion.matches) frame = requestAnimationFrame(draw);
   }
 
-  if (!coarsePointer) {
-    addEventListener('pointermove', event => {
-      pointer.speed = Math.min(90, Math.hypot(event.clientX - pointer.previousX, event.clientY - pointer.previousY));
-      pointer.previousX = pointer.x = event.clientX;
-      pointer.previousY = pointer.y = event.clientY;
-      pointer.active = true;
-    }, { passive: true });
-    document.documentElement.addEventListener('pointerleave', () => { pointer.active = false; pointer.speed = 0; }, { passive: true });
+  function updatePointer(event) {
+    if (coarsePointer && !pointer.down) return;
+    pointer.speed = Math.min(90, Math.hypot(event.clientX - pointer.previousX, event.clientY - pointer.previousY));
+    pointer.previousX = pointer.x = event.clientX;
+    pointer.previousY = pointer.y = event.clientY;
+    pointer.active = true;
   }
+
+  addEventListener('pointerdown', event => {
+    pointer.down = true;
+    pointer.previousX = event.clientX;
+    pointer.previousY = event.clientY;
+    updatePointer(event);
+  }, { passive: true });
+  addEventListener('pointermove', updatePointer, { passive: true });
+  function releasePointer() {
+    pointer.down = false;
+    pointer.speed = 0;
+    if (coarsePointer) setTimeout(() => { if (!pointer.down) pointer.active = false; }, 180);
+  }
+  addEventListener('pointerup', releasePointer, { passive: true });
+  addEventListener('pointercancel', releasePointer, { passive: true });
+  document.documentElement.addEventListener('pointerleave', () => { pointer.active = false; pointer.down = false; pointer.speed = 0; }, { passive: true });
 
   addEventListener('resize', resize, { passive: true });
   document.addEventListener('visibilitychange', () => { if (!document.hidden && !frame) frame = requestAnimationFrame(draw); });

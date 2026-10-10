@@ -11,7 +11,7 @@ function initialiseWorld() {
   if (!context) return;
   const coarse = window.matchMedia('(pointer: coarse)').matches;
   const count = coarse ? 34 : 76;
-  const pointer = { x: 0, y: 0, active: false };
+  const pointer = { x: 0, y: 0, active: false, down: false };
   let width = 1;
   let height = 1;
   let visible = true;
@@ -62,7 +62,7 @@ function initialiseWorld() {
     dot.x += (destination.x - dot.x) * pull;
     dot.y += (destination.y - dot.y) * pull;
 
-    if (pointer.active && !coarse && !reducedMotion.matches) {
+    if (pointer.active && !reducedMotion.matches) {
       const dx = dot.x * width - pointer.x;
       const dy = dot.y * height - pointer.y;
       const distance = Math.hypot(dx, dy);
@@ -114,6 +114,7 @@ function initialiseWorld() {
   }
 
   function moveGuide(event) {
+    if (coarse && !pointer.down) return;
     const rect = stage.getBoundingClientRect();
     pointer.x = event.clientX - rect.left;
     pointer.y = event.clientY - rect.top;
@@ -127,9 +128,20 @@ function initialiseWorld() {
     if (reducedMotion.matches) draw(performance.now());
   }
 
+  stage.addEventListener('pointerdown', event => {
+    pointer.down = true;
+    moveGuide(event);
+  }, { passive: true });
   stage.addEventListener('pointermove', moveGuide, { passive: true });
+  function releaseGuide() {
+    pointer.down = false;
+    if (coarse) setTimeout(() => { if (!pointer.down) pointer.active = false; }, 180);
+  }
+  stage.addEventListener('pointerup', releaseGuide, { passive: true });
+  stage.addEventListener('pointercancel', releaseGuide, { passive: true });
   stage.addEventListener('pointerleave', () => {
     pointer.active = false;
+    pointer.down = false;
     stage.style.setProperty('--guide-x', '0px');
     stage.style.setProperty('--guide-y', '0px');
     stage.style.setProperty('--eye-x', '0px');

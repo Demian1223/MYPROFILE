@@ -7,6 +7,7 @@ const html = read('index.html');
 const css = read('styles/final.css');
 const world = read('scripts/interactive/hero-world.js');
 const ambient = read('scripts/interactive/ambient-story.js');
+const siteParticles = read('scripts/interactive/site-particles.js');
 
 assert.match(html, /id="hero-dot-field"/, 'hero Canvas exists');
 assert.match(html, /class="hero-guide-illustration"/, 'SVG personal guide exists');
@@ -29,7 +30,15 @@ for (const motif of ['broadcast', 'processPath', 'conversationLines', 'productFl
   assert.match(ambient, new RegExp(motif), `${motif} ambient motif exists`);
 }
 assert.match(ambient, /height > 1800 \? \.65/, 'large chapters use a reduced canvas resolution');
-assert.match(ambient, /radius = Math\.min\(290, 190 \+ pointer\.speed \* 2600\)/, 'cursor speed expands the particle reaction radius');
+assert.match(ambient, /radius = Math\.min\(coarse \? 245 : 290, \(coarse \? 165 : 190\) \+ pointer\.speed \* 2600\)/, 'pointer speed expands the desktop and mobile reaction radius');
 assert.match(ambient, /addEventListener\('pointermove'/, 'ambient particles follow pointer movement throughout the homepage');
+for (const source of [world, ambient, siteParticles]) {
+  assert.match(source, /pointerdown/, 'touch interaction starts on pointer down');
+  assert.match(source, /pointercancel/, 'touch interaction safely ends when mobile scrolling cancels the gesture');
+  assert.match(source, /passive: true/, 'touch interaction uses scroll-safe passive listeners');
+}
+assert.doesNotMatch(siteParticles, /pointer\.active && !coarsePointer/, 'page particles remain interactive on coarse touch pointers');
+assert.doesNotMatch(ambient, /pointer\.active && !coarse/, 'chapter particles remain interactive on coarse touch pointers');
+assert.doesNotMatch(world, /pointer\.active && !coarse/, 'hero particles remain interactive on coarse touch pointers');
 
-console.log('PASS interactive Canvas field, SVG guide, chapter narrative, mobile simplification and reduced-motion fallback.');
+console.log('PASS interactive Canvas field, SVG guide, chapter narrative, touch interaction, mobile simplification and reduced-motion fallback.');
